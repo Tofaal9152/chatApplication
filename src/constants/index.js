@@ -22,6 +22,25 @@ export const navLinks = [
         title: "Contact",
     },
 ];
+export const navLinksFooter = [
+    
+    {
+        id: "About",
+        title: "About",
+    },
+    {
+        id: "Features",
+        title: "Features",
+    },
+    {
+        id: "Works",
+        title: "Works",
+    },
+    {
+        id: "Support",
+        title: "Support",
+    },
+];
 
 export const features = [
     {

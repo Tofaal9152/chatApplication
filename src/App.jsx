@@ -26,7 +26,7 @@ const App = () => {
         </div>
       </div>
       {/* Hero */}
-      <div className=" w-full overflow-hidden">
+      <div className=" w-full overflow-hidden h-screen">
         <div className={`${style.paddingX} ${style.flexCenter}`}>
           <div className={`${style.boxWidth}`}>
             <Hero />
@@ -61,15 +61,20 @@ const App = () => {
         className={`${style.paddingX} ${style.flexCenter} bg-[#F8F8FA] py-[95px]`}
       >
         <div className={`${style.boxWidth}`}>
-          <Feature3/>
+          <Feature3 />
         </div>
       </div>
       {/* Footer /> */}
       <div
-        className={`${style.paddingX} ${style.flexCenter} bg-[#F8F8FA] py-[95px]`}
+        className={`${style.paddingX} ${style.flexCenter} bg-[#F8F8FA] pt-[95px] pb-[2rem]`}
       >
         <div className={`${style.boxWidth}`}>
-          <Footer/>
+          <Footer />
+          <hr />
+          <div className="text-[#797B89] flex items-center justify-between mt-4 text-xs">
+            <p>© Copyright 2024, All Rights Reserved</p>
+            <p>Privacy Policy Terms & Conditions</p>
+          </div>
         </div>
       </div>
     </div>
