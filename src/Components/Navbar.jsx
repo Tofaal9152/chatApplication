@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 // import from asset and style
-import { close, menu } from "../assets/index";
+// import { close, menu } from "../assets/index";
+import close from '../assets/close.svg'
+import menu from "../assets/menu.svg";
 import Polyglot from "../assets/Polyglot.png";
 // From dataArray
 import { navLinks } from "../constants";
@@ -54,7 +56,7 @@ const Navbar = () => {
           })}
           <div className="flex custom879:hidden flex-col items-center space-y-3 absolute bottom-[4rem] right-2 ">
             <p className="text-black fontymoni cursor-pointer ">Login</p>
-            <button className="bg-[#9747ff] flex-1 hover:bg-violet-600 duration-300 text-white font-semibold py-2 px-4 border rounded-lg">
+            <button className="bg-[#9747ff] flex-1 hover:bg-violet-600 duration-300 text-white font-semibold py-1 px-2 text-sm border rounded-lg">
               Get Started Free
             </button>
           </div>
