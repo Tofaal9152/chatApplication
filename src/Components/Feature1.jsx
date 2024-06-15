@@ -1,22 +1,26 @@
-import React from 'react'
+import React from "react";
 import BlackGirl2 from "../assets/BlackGirl2.jpeg";
+
 const Feature1 = () => {
   return (
-    <div className="flex items-center justify-between  ">
+    <div className="flex flex-col md:flex-row items-center justify-between md:space-x-11 space-y-11 md:space-y-0">
       <div className="border-blue-500 border-[0.1rem]">
-        <img className="w-[470px] relative" src={BlackGirl2} alt="" />
+        <img
+          className="w-[400px] flex-1"
+          src={BlackGirl2}
+          alt="Feature Image"
+        />
       </div>
-
-      <div className="flex flex-col space-y-10">
-        <h1 className="text-[#1B1C20] text-4xl w-[25rem] leading-normal">
+      <div className="flex md:items-start justify-center items-center flex-col space-y-5 md:space-y-10">
+        <h1 className="text-[#1B1C20] text-center md:text-start text-2xl sm:text-4xl md:leading-normal">
           Real-Time Audio Transcriptions
         </h1>
-        <p className="text-[#5F616B]">
+        <p className="text-[#5F616B] text-center md:text-start">
           Select your preferred language and chat away
         </p>
       </div>
     </div>
   );
-}
+};
 
-export default Feature1
+export default Feature1;

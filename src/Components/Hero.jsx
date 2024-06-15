@@ -2,6 +2,7 @@ import React from "react";
 // React Icons
 import { FaArrowRight } from "react-icons/fa6";
 import Pink_Girl from "../assets/Pink_Girl.png";
+import Pink_Girrl from "../assets/Pink_Girrl.png";
 
 const Hero = () => {
   return (
@@ -19,8 +20,8 @@ const Hero = () => {
           <FaArrowRight size={19} />
         </div>
       </div>
-      <div className="Image_Girl w-[30rem] h-[36rem] ">
-        <img className="" src={Pink_Girl} alt="" />
+      <div className="Image_Girl w-[39rem] h-[36rem] ">
+        <img className="" src={Pink_Girrl} alt="" />
       </div>
     </div>
   );

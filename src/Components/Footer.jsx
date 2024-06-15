@@ -12,25 +12,33 @@ import { navLinksFooter } from "../constants";
 const Footer = () => {
   // state
   return (
-    <nav
-      className={`custom879:flex w-full hidden justify-between items-center py-6 `}
-    >
-      <img className="w-[10rem]" src={Polyglot} alt="" />
-      {/* pc */}
-      <div className="hidden custom879:flex justify-center items-center space-x-10 ">
-        {navLinksFooter.map((item, index) => {
-          return (
-            <div className="text-black fontymoni cursor-pointer" key={item.id}>
-              {item.title}
-            </div>
-          );
-        })}
+    <nav>
+      <div className={`flex w-full justify-between items-center p-1 `}>
+        <img className="md:w-[10rem] w-[6rem]" src={Polyglot} alt="" />
+        {/* pc */}
+        <div className="hidden custom879:flex justify-center items-center space-x-10 ">
+          {navLinksFooter.map((item, index) => {
+            return (
+              <div
+                className="text-black fontymoni cursor-pointer"
+                key={item.id}
+              >
+                {item.title}
+              </div>
+            );
+          })}
+        </div>
+        <div className="flex space-x-5 text-[#FD6003]">
+          <FaTwitter className="cursor-pointer" size={22} />
+          <FaFacebookF className="cursor-pointer" size={22} />
+          <GrInstagram className="cursor-pointer" size={22} />
+          <FaGithub className="cursor-pointer" size={22} />
+        </div>
       </div>
-      <div className="flex space-x-5 text-[#FD6003]">
-        <FaTwitter className="cursor-pointer"  size={22}/>
-        <FaFacebookF className="cursor-pointer" size={22}/>
-        <GrInstagram className="cursor-pointer" size={22}/>
-        <FaGithub className="cursor-pointer" size={22}/>
+      <hr />
+      <div className="text-[#797B89] flex items-center justify-between p-2 text-xs">
+        <p className="text-center ">© Copyright 2024, All Rights Reserved</p>
+        <p className="text-center ">Privacy Policy Terms & Conditions</p>
       </div>
     </nav>
   );

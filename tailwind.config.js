@@ -13,10 +13,10 @@ export default {
         'laptop': '1024px',
         // => @media (min-width: 1024px) { ... }
 
-        'desktop': '1280px',
+        'card676': '676px',
         // => @media (min-width: 1280px) { ... }
 
-        'custom879': '879px',
+        'custom879': '996px',
         // => @media (min-width: 923px) { ... }
       },
     },

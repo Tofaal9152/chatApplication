@@ -1,6 +1,7 @@
 import React from 'react'
 import Signin from '../Signin';
 import style from "../../style";
+
 const EXSignin = () => {
   return (
     <div className=" w-full overflow-hidden">

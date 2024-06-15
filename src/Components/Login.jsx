@@ -3,18 +3,28 @@ import React, { useState } from "react";
 import brain from "../assets/brain.png";
 import xxx from "../assets/xxx.png";
 import { FaGoogle } from "react-icons/fa";
-import { MdOutlineAlternateEmail } from "react-icons/md";
-
 import { FaVk } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [Checkedddd, setCheckedddd] = useState(false);
+  const navigate = useNavigate();
   return (
     <div className="flex flex-col items-center justify-center">
       {/* first */}
       <div className="fontimonti text-center flex flex-col items-center justify-center space-y-4">
-        <img className="Heading w-[62px]" src={brain} alt="" />
-        <h1 className="text-[#6408DC] text-3xl font-bold">PolyGrot</h1>
+        <img
+          onClick={() => navigate("/")}
+          className="Heading w-[62px] cursor-pointer"
+          src={brain}
+          alt=""
+        />
+        <h1
+          onClick={() => navigate("/")}
+          className="text-[#6408DC] text-3xl font-bold  cursor-pointer"
+        >
+          PolyGlot
+        </h1>
         <p className="text-[#7C8092]">Welcome Back!</p>
         <div className="flex items-center justify-center space-x-2">
           <div className=" bg-[#F4F6FA] rounded-md p-2 cursor-pointer ">

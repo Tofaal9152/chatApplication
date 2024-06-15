@@ -68,15 +68,10 @@ const App = () => {
       </div>
       {/* Footer /> */}
       <div
-        className={`${style.paddingX} ${style.flexCenter} bg-[#F8F8FA] pt-[95px] pb-[2rem]`}
+        className={`${style.paddingX} ${style.flexCenter} bg-[#F8F8FA] pb-[1rem]`}
       >
         <div className={`${style.boxWidth}`}>
           <Footer />
-          <hr />
-          <div className="text-[#797B89] flex items-center justify-between mt-4 text-xs">
-            <p>© Copyright 2024, All Rights Reserved</p>
-            <p>Privacy Policy Terms & Conditions</p>
-          </div>
         </div>
       </div>
     </div>
