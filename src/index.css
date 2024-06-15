@@ -4,6 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.fontymoni {
+    font-family: poppins;
+}
+.monospace{
+    font-family: monospace;
+}
+
 :root {
     --black-gradient: linear-gradient(144.39deg,
             #ffffff -278.56%,
@@ -70,13 +77,13 @@
 
 .sidebar {
     -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-    animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-top 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @-webkit-keyframes slide-top {
     0% {
-        -webkit-transform: translateY(100px);
-        transform: translateY(100px);
+        -webkit-transform: translateY(35px);
+        transform: translateY(35px);
     }
 
     100% {
@@ -87,8 +94,8 @@
 
 @keyframes slide-top {
     0% {
-        -webkit-transform: translateY(100px);
-        transform: translateY(100px);
+        -webkit-transform: translatex(100px);
+        transform: translatex(100px);
     }
 
     100% {

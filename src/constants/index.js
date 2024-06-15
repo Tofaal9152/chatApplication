@@ -2,20 +2,24 @@ import { people01, people02, people03, facebook, instagram, linkedin, twitter, a
 
 export const navLinks = [
     {
-        id: "home",
-        title: "Home",
+        id: "Demos",
+        title: "Demos",
     },
     {
-        id: "features",
-        title: "Features",
+        id: "About",
+        title: "About",
     },
     {
-        id: "product",
-        title: "Product",
+        id: "Blog",
+        title: "Blog",
     },
     {
-        id: "clients",
-        title: "Clients",
+        id: "Pages",
+        title: "Pages",
+    },
+    {
+        id: "Contact",
+        title: "Contact",
     },
 ];
 
@@ -154,27 +158,25 @@ export const footerLinks = [
     },
 ];
 
-export const socialMedia = [
+export const Feature_List_Message = [
     {
-        id: "social-media-1",
-        icon: instagram,
-        link: "https://www.instagram.com/",
+        id: "video-messaging",
+        title: "Video messaging",
+        someText: "This software is very easy for you to manage. You can use it as you wish.",
+        
     },
     {
-        id: "social-media-2",
-        icon: facebook,
-        link: "https://www.facebook.com/",
+        id: "save-time",
+        title: "Save your time",
+        someText: "This software is very easy for you to manage. You can use it as you wish.",
+        
     },
     {
-        id: "social-media-3",
-        icon: twitter,
-        link: "https://www.twitter.com/",
-    },
-    {
-        id: "social-media-4",
-        icon: linkedin,
-        link: "https://www.linkedin.com/",
-    },
+        id: "chat-language",
+        title: "Chat in any Language",
+        someText: "This software is very easy for you to manage. You can use it as you wish.",
+        
+    }
 ];
 
 export const clients = [

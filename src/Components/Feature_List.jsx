@@ -1,0 +1,63 @@
+import React from "react";
+import { FaVideo } from "react-icons/fa";
+import { MdOutlineSignalWifi4BarLock } from "react-icons/md";
+import { IoIosStopwatch } from "react-icons/io";
+
+
+
+const Feature_List = () => {
+  return (
+    <div className=" space-y-8">
+      <h1 className='text-3xl fontymoni text-center'>Features for a better experience</h1>
+      <div className="flex items-center justify-between">
+        {/* F-1 */}
+        <div className="flex items-start justify-center space-x-7  w-[416px] h-[153px] p-[2.5rem]">
+          <div className="p-3 rounded-full bg-[#FFDFCD] flex items-center justify-center">
+            <FaVideo size={24} className="text-[#FD6003]" />
+          </div>
+          <div className="flex flex-col space-y-3 ">
+            <h1 className="text-md font-medium text-[#1B1C20]">
+              Video messaging
+            </h1>
+            <p className=" text-sm text-[#5F616B]">
+              This software is very easy for you to manage. You can use it as
+              you wish.
+            </p>
+          </div>
+        </div>
+        {/* F-2 */}
+        <div className="flex items-start justify-center space-x-7  w-[416px] h-[153px] p-[2.5rem]">
+          <div className="p-3 rounded-full bg-[#DBEDDC] flex items-center justify-center">
+            <IoIosStopwatch size={24} className="text-[#4DA44E]" />
+          </div>
+          <div className="flex flex-col space-y-3 ">
+            <h1 className="text-md font-medium text-[#1B1C20]">
+              Video messaging
+            </h1>
+            <p className=" text-sm text-[#5F616B]">
+              This software is very easy for you to manage. You can use it as
+              you wish.
+            </p>
+          </div>
+        </div>
+        {/* F-3 */}
+        <div className="flex items-start justify-center space-x-7  w-[416px] h-[153px] p-[2.5rem]">
+          <div className="p-3 rounded-full bg-[#FFDFCD] flex items-center justify-center">
+            <MdOutlineSignalWifi4BarLock size={24} className="text-[#FD6003]" />
+          </div>
+          <div className="flex flex-col space-y-3 ">
+            <h1 className="text-md font-medium text-[#1B1C20]">
+              Video messaging
+            </h1>
+            <p className=" text-sm text-[#5F616B]">
+              This software is very easy for you to manage. You can use it as
+              you wish.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Feature_List;

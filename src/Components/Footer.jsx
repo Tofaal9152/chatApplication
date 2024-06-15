@@ -5,7 +5,7 @@ import Polyglot from "../assets/Polyglot.png";
 // From dataArray
 import { navLinks } from "../constants";
 
-const Navbar = () => {
+const Footer = () => {
   // state
   const [open_close, setopen_close] = useState(true);
   return (
@@ -64,5 +64,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
-
+export default Footer;
