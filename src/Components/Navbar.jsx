@@ -6,9 +6,11 @@ import menu from "../assets/menu.svg";
 import Polyglot from "../assets/Polyglot.png";
 // From dataArray
 import { navLinks } from "../constants";
+import {  useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   // state
+  const navigate = useNavigate();
   const [open_close, setopen_close] = useState(true);
   return (
     <nav className={`w-full flex justify-between items-center py-6 `}>
@@ -24,8 +26,16 @@ const Navbar = () => {
         })}
       </div>
       <div className="hidden custom879:flex items-center justify-between space-x-8 ">
-        <p className="text-black fontymoni cursor-pointer ">Login</p>
-        <button className="bg-[#9747ff] flex-1 hover:bg-violet-600 duration-300 text-white font-semibold py-2 px-4 border rounded-lg">
+        <p
+          onClick={() => navigate("/login")}
+          className="text-black fontymoni cursor-pointer "
+        >
+          Login
+        </p>
+        <button
+          onClick={() => navigate("/signin")}
+          className="bg-[#9747ff] flex-1 hover:bg-violet-600 duration-300 text-white font-semibold py-2 px-4 border rounded-lg"
+        >
           Get Started Free
         </button>
       </div>
@@ -55,8 +65,16 @@ const Navbar = () => {
             );
           })}
           <div className="flex custom879:hidden flex-col items-center space-y-3 absolute bottom-[4rem] right-2 ">
-            <p className="text-black fontymoni cursor-pointer ">Login</p>
-            <button className="bg-[#9747ff] flex-1 hover:bg-violet-600 duration-300 text-white font-semibold py-1 px-2 text-sm border rounded-lg">
+            <p
+              onClick={() => navigate("/login")}
+              className="text-black fontymoni cursor-pointer "
+            >
+              Login
+            </p>
+            <button
+              onClick={() => navigate("/signin")}
+              className="bg-[#9747ff] flex-1 hover:bg-violet-600 duration-300 text-white font-semibold py-1 px-2 text-sm border rounded-lg"
+            >
               Get Started Free
             </button>
           </div>
