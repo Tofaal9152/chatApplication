@@ -9,7 +9,7 @@ const Feature_List = () => {
   return (
     <div className=" space-y-10 ">
       <h1 className='text-3xl fontymoni text-center'>Features for a better experience</h1>
-      <div className="flex flex-col card676:flex-row items-center  card676:justify-between justify-center ">
+      <div className="flex flex-col space-y-3 card676:space-y-0 card676:flex-row items-center  card676:justify-between justify-center ">
         {/* F-1 */}
         <div className="flex lg:flex-row flex-col items-center space-y-3 lg:space-y-0 lg:items-start lg:text-start justify-center space-x-7  w-[416px] h-[153px] p-[1rem] lg:p-[2.5rem]">
           <div className="p-3 rounded-full bg-[#FFDFCD] flex items-center justify-center">
