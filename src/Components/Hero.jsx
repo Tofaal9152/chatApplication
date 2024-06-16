@@ -3,8 +3,10 @@ import React from "react";
 import { FaArrowRight } from "react-icons/fa6";
 import Pink_Girl from "../assets/Pink_Girl.png";
 import Pink_Girrl from "../assets/Pink_Girrl.png";
+import {  useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate()
   return (
     <div className="flex flex-col md:flex-row items-center justify-between text-center">
       <div className="w-[400px] md:w-[509px] h-[358px] space-y-5 ">
@@ -15,7 +17,10 @@ const Hero = () => {
           Great software that allows you to chat from any place at any time
           without any interruption
         </p>
-        <div className="button cursor-pointer flex text-center items-center justify-center space-x-2 bg-[#9747ff]  hover:bg-violet-600 duration-300 text-white font-semibold py-2 px-4  rounded-lg">
+        <div
+          onClick={() => navigate("/messenger")}
+          className="button cursor-pointer flex text-center items-center justify-center space-x-2 bg-[#9747ff]  hover:bg-violet-600 duration-300 text-white font-semibold py-2 px-4  rounded-lg"
+        >
           <span className="">Start Chating Now</span>
           <FaArrowRight size={19} />
         </div>

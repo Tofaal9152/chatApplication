@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 // Icons
-import brain from "../assets/brain.png";
-import xxx from "../assets/xxx.png";
+import brain from "../../assets/brain.png";
+import xxx from "../../assets/xxx.png";
+
 import { FaGoogle } from "react-icons/fa";
 import { FaVk } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";

@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App.jsx";
 import EXLogin from './Components/LogIn/EXLogin.jsx'
 import EXSignin from './Components/Signin/EXSignin.jsx'
+import EXMessenger from './Components/Messenger/EXMessenger.jsx'
 // redux
 import { Provider } from "react-redux";
 import store from "./Redux/store.js";
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: "/signin",
     element: <EXSignin />,
+  },
+  {
+    path: "/messenger",
+    element: <EXMessenger />,
   },
 ]);
 

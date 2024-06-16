@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // Icons
-import brain from "../assets/brain.png";
-import xxx from "../assets/xxx.png";
+import brain from "../../assets/brain.png";
+import xxx from "../../assets/xxx.png";
 import { FaGoogle } from "react-icons/fa";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import { FaVk } from "react-icons/fa";

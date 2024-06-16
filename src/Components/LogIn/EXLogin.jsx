@@ -1,6 +1,6 @@
 import React from 'react'
 import style from '../../style';
-import Login from '../Login';
+import Login from './Login';
 const EXLogin = () => {
   return (
     <div className=" w-full overflow-hidden">

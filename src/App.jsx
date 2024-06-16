@@ -6,14 +6,12 @@ import style from "./style";
 // Importing Components
 import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
-import Avatar_Box from "./Components/Avatar_Box";
 import Feature_List from "./Components/Feature_List";
 import Feature1 from "./Components/Feature1";
 import Feature2 from "./Components/Feature2";
 import Feature3 from "./Components/Feature3";
 import Footer from "./Components/Footer";
-import Signin from "./Components/Signin";
-import Login from "./Components/Login";
+
 
 // App Building
 const App = () => {
