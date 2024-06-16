@@ -4,16 +4,17 @@ import { BsFillPlusCircleFill } from "react-icons/bs";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { CiSearch } from "react-icons/ci";
 import Avatar from "../../../assets/Avater.jpeg";
-import { icons } from "../CCNST";
-import { pText } from "../CCNST";
-import { messageContaineer } from "../CCNST";
+import { Messenger_NavIcon } from "../../../constants";
+import { Messenger_Recent } from "../../../constants";
+import { messageContaineer } from "../../../constants";
+
 
 const Chat = () => {
   return (
-    <div className="flexWidth1 flex flex-col h-screen overflow-y-hidden border-[1px] border-[#D4D4DD]">
+    <div className="w-[25vw] flex flex-col h-screen overflow-y-hidden border-[1px] border-[#D4D4DD]">
       {/* heading Nav */}
       <div className="icons flex items-center justify-evenly h-[98px] my-[0.8rem]">
-        {icons.map((items, index) => {
+        {Messenger_NavIcon.map((items, index) => {
           return (
             <div
               key={items.id}
@@ -34,7 +35,7 @@ const Chat = () => {
           </div>
           {/* fropdown */}
           <div className="flex items-center justify-between text-[#7C8092]">
-            {pText.map((items, index) => {
+            {Messenger_Recent.map((items, index) => {
               return <p key={items.id}>{items.message}</p>;
             })}
             <RiArrowDropDownLine size={25} />

@@ -1,25 +1,25 @@
 import React, { useState } from "react";
-// import from asset and style
-// import { close, menu } from "../assets/index";
-import close from '../assets/close.svg'
-import menu from "../assets/menu.svg";
-import Polyglot from "../assets/Polyglot.png";
-// From dataArray
-import { navLinks } from "../constants";
-import {  useNavigate } from "react-router-dom";
+// from asset 
+import close from "../../../assets/close.svg";
+import menu from "../../../assets/menu.svg";
+import logo from "../../../assets/logo.png";
+// From Constants
+import { Navbar_navLinks } from "../../../constants/index";
+// From React-Router-Dom
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   // state
   const navigate = useNavigate();
   const [open_close, setopen_close] = useState(true);
   return (
-    <nav className={`w-full flex justify-between items-center py-6 `}>
-      <img className="w-[10rem]" src={Polyglot} alt="" />
+    <nav className={`w-full flex justify-between items-center py-3`}>
+      <img className="w-[2.5rem]" src={logo} alt="" />
       {/* pc */}
       <div className="hidden custom879:flex justify-center items-center space-x-10 ">
-        {navLinks.map((item, index) => {
+        {Navbar_navLinks.map((item, index) => {
           return (
-            <div className="text-black fontymoni cursor-pointer" key={item.id}>
+            <div className="text-white fontymoni cursor-pointer" key={item.id}>
               {item.title}
             </div>
           );
@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className="hidden custom879:flex items-center justify-between space-x-8 ">
         <p
           onClick={() => navigate("/login")}
-          className="text-black fontymoni cursor-pointer "
+          className="text-white fontymoni cursor-pointer "
         >
           Login
         </p>
@@ -54,7 +54,7 @@ const Navbar = () => {
             open_close ? "hidden" : "flex"
           } custom879:hidden flex-col bg-white h-screen items-start flex-1  space-y-4 fixed top-[0] overflow-x-hidden right-0 min-w-[140px] p-4 sidebar`}
         >
-          {navLinks.map((item, index) => {
+          {Navbar_navLinks.map((item, index) => {
             return (
               <div
                 className="text-black fontymoni cursor-pointer mt-[4.1rem]"
@@ -85,4 +85,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

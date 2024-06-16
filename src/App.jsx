@@ -1,24 +1,21 @@
 import React from "react";
-
 // Adding Style.js and assets
 import style from "./style";
-
 // Importing Components
-import Navbar from "./Components/Navbar";
-import Hero from "./Components/Hero";
-import Feature_List from "./Components/Feature_List";
-import Feature1 from "./Components/Feature1";
-import Feature2 from "./Components/Feature2";
-import Feature3 from "./Components/Feature3";
-import Footer from "./Components/Footer";
+import Navbar from "./Components/Landing_Page/Navbar/Navbar";
 
-
-// App Building
+import Hero from "./Components/Landing_Page/Hero/Hero";
+import Feature_List from "./Components/Landing_Page/Feature/Feature_List";
+import Feature1 from "./Components/Landing_Page/Feature/Feature1";
+import Feature2 from "./Components/Landing_Page/Feature/Feature2";
+import Feature3 from "./Components/Landing_Page/Feature/Feature3";
+import Footer from "./Components/Landing_Page/Footer/Footer";
+import bgImage from "./assets/backgroundImage.jpeg";
 const App = () => {
   return (
     <div className="bg-white">
       {/* navbar */}
-      <div className=" w-full overflow-hidden">
+      <div className="w-full sticky top-0 glass z-10">
         <div className={`${style.paddingX} ${style.flexCenter}`}>
           <div className={`${style.boxWidth} z-10`}>
             <Navbar />
@@ -26,11 +23,14 @@ const App = () => {
         </div>
       </div>
       {/* Hero */}
-      <div className=" w-full overflow-hidden h-screen">
-        <div className={`${style.paddingX} ${style.flexCenter}`}>
+      <div
+        className=" w-full overflow-hidden h-screen bg-cover bg-center relative top-[-4.13rem] z-0"
+        style={{ backgroundImage: `url(${bgImage})` }}
+      >
+        <div className={`${style.paddingX} ${style.flexCenter} h-screen`}>
+          <div className="w-full h-1">{/* pseudo element */}</div>
           <div className={`${style.boxWidth}`}>
             <Hero />
-            {/* <Avatar_Box /> */}
           </div>
         </div>
       </div>

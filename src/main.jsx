@@ -2,9 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
-import EXLogin from './Components/LogIn/EXLogin.jsx'
-import EXSignin from './Components/Signin/EXSignin.jsx'
-import EXMessenger from './Components/Messenger/EXMessenger.jsx'
+import Login from './Components/LogIn/Login.jsx'
+import Signin from './Components/Signin/Signin_Components/Signin_Interface.jsx'
+import Messenger from "./Components/Messenger/Messenger.jsx"
 // redux
 import { Provider } from "react-redux";
 import store from "./Redux/store.js";
@@ -18,15 +18,15 @@ const router = createBrowserRouter([
   },
   {
     path: "/login",
-    element: <EXLogin />,
+    element: <Login />,
   },
   {
     path: "/signin",
-    element: <EXSignin />,
+    element: <Signin />,
   },
   {
     path: "/messenger",
-    element: <EXMessenger />,
+    element: <Messenger />,
   },
 ]);
 

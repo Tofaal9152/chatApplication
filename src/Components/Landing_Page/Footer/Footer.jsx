@@ -1,23 +1,21 @@
 import React, { useState } from "react";
-// import from asset and style
-import Polyglot from "../assets/Polyglot.png";
+// from asset and React-Icons
 import { FaTwitter } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
 import { FaGithub } from "react-icons/fa";
-
-// From dataArray
-import { navLinksFooter } from "../constants";
+import Polyglot from "../../../assets/Polyglot.png";
+// From Constant
+import { Footer_navLinks } from "../../../constants";
 
 const Footer = () => {
-  // state
   return (
     <nav>
       <div className={`flex w-full justify-between items-center p-1 `}>
         <img className="md:w-[10rem] w-[6rem]" src={Polyglot} alt="" />
         {/* pc */}
         <div className="hidden custom879:flex justify-center items-center space-x-10 ">
-          {navLinksFooter.map((item, index) => {
+          {Footer_navLinks.map((item, index) => {
             return (
               <div
                 className="text-black fontymoni cursor-pointer"

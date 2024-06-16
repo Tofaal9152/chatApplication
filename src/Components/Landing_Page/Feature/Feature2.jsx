@@ -1,5 +1,6 @@
 import React from "react";
-import messenger from "../assets/messenger.png";
+// From Assets
+import Feature2_Messenger_pic from "../../../assets/Feature2_Messenger_pic.png";
 
 const Feature2 = () => {
   return (
@@ -15,7 +16,7 @@ const Feature2 = () => {
       <div>
         <img
           className="w-[470px]"
-          src={messenger}
+          src={Feature2_Messenger_pic}
           alt="Messenger Illustration"
         />
       </div>

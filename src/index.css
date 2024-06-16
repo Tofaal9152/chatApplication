@@ -144,3 +144,8 @@
 .flexWidth2{
     flex: 2;
 }
+.glass {
+    background: rgba(30, 30, 30, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}

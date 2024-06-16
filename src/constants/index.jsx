@@ -1,9 +1,53 @@
+export const Navbar_navLinks = [
+    {
+        id: "Demos",
+        title: "Demos",
+    },
+    {
+        id: "About",
+        title: "About",
+    },
+    {
+        id: "Blog",
+        title: "Blog",
+    },
+    {
+        id: "Pages",
+        title: "Pages",
+    },
+    {
+        id: "Contact",
+        title: "Contact",
+    },
+];
+export const Footer_navLinks = [
+    
+    {
+        id: "About",
+        title: "About",
+    },
+    {
+        id: "Features",
+        title: "Features",
+    },
+    {
+        id: "Works",
+        title: "Works",
+    },
+    {
+        id: "Support",
+        title: "Support",
+    },
+];
+
+// Messenger
 import { FaBookmark } from "react-icons/fa";
 import { MdGroups } from "react-icons/md";
 import { IoMdSettings } from "react-icons/io";
-import moonstar from "../../assets/Moon_star.png";
-import Avater from "../../assets/Avater.jpeg";
-export const icons = [
+import moonstar from "../assets/Moon_star.png";
+import Avater from "../assets/Avater.jpeg";
+
+export const Messenger_NavIcon = [
   {
     id: "FaBookmark",
     icon: <FaBookmark size={23} />,
@@ -21,7 +65,7 @@ export const icons = [
     icon: <IoMdSettings size={23} />,
   },
 ];
-export const pText = [
+export const Messenger_Recent = [
   {
     id: "Recent",
     message: "Recent",
@@ -40,14 +84,13 @@ export const pText = [
   },
 ];
 export const messageContaineer = [
-  
   {
     img: Avater,
     avatat_name: "md tofaal ahmed ",
     avatat_Text: "Recenasdsdasdasdaasdadasdt",
     time: "12:30",
   },
-  
+
   {
     img: Avater,
     avatat_name: "md tofaal ahmed",
