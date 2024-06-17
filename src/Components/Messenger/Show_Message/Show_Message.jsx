@@ -74,7 +74,7 @@ const MsxContainer = () => {
           {/* Showing Message */}
           <MeAndFriendConversation />
           {/* Messages Section */}
-          <div className="flex w-full justify-center border-4 items-center absolute bottom-0 space-x-4 p-4 rounded-lg shadow-md">
+          <div className="flex justify-center border-4 items-center relative bottom-0 space-x-4 p-2 rounded-lg shadow-md bg-white w-full">
             <span className="cursor-pointer">
               <IoLinkOutline size={25} />
             </span>
