@@ -34,7 +34,7 @@ const Navbar = () => {
         </p>
         <button
           onClick={() => navigate("/signin")}
-          className="bg-[#9747ff] flex-1 hover:bg-violet-600 duration-300 text-white font-semibold py-2 px-4 border rounded-lg"
+          className="bg-gradient-to-r from-pink-500 via-purple-500 hover:via-purple-500 to-[#3404ab] hover:bg-pink-500 hover:from-[#3404ab] hover:bg-gradient-to-r  flex-1 duration-1000  text-white font-semibold py-2 px-4 border rounded-lg"
         >
           Get Started Free
         </button>

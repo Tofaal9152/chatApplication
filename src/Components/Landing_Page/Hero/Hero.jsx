@@ -18,9 +18,9 @@ const Hero = () => {
         </p>
         <div
           onClick={() => navigate("/messenger")}
-          className="button cursor-pointer flex text-center items-center justify-center space-x-2 bg-[#9747ff]  hover:bg-violet-600 duration-300 text-white font-semibold py-2 px-4  rounded-lg"
+          className="bg-gradient-to-r from-pink-500 via-purple-500 hover:via-purple-500 to-[#3404ab] hover:bg-pink-500 hover:from-[#3404ab] hover:bg-gradient-to-r button cursor-pointer flex text-center items-center justify-center space-x-2 duration-1000 text-white font-semibold py-2 px-4  rounded-lg"
         >
-          <span className="">Start Chating Now</span>
+          <span>Start Chating Now</span>
           <FaArrowRight size={19} />
         </div>
       </div>
