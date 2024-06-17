@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.fontymoni {
+.fontPoppin {
     font-family: "Poppins", sans-serif;
 }
 .monospace{
@@ -20,6 +20,18 @@
             #6d6d6d -78.47%,
             #11101d 91.61%);
     --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+.flexWidth1 {
+    flex: 1;
+}
+
+.flexWidth2 {
+    flex: 3;
+    /* flex: ; */
+}
+.flexWidth3 {
+    flex: 0.5;
+    /* flex: ; */
 }
 
 * {
@@ -138,12 +150,7 @@
     background: rgba(255, 255, 255, 0.6);
     filter: blur(750px);
 }
-.flexWidth1{
-    flex: 1;
-}
-.flexWidth2{
-    flex: 2;
-}
+
 .glass {
     background: rgba(30, 30, 30, 0.2);
     backdrop-filter: blur(10px);

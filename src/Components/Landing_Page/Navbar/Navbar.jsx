@@ -14,12 +14,12 @@ const Navbar = () => {
   const [open_close, setopen_close] = useState(true);
   return (
     <nav className={`w-full flex justify-between items-center py-3`}>
-      <img className="w-[2.5rem]" src={logo} alt="" />
+      <img className="w-[2.3rem] md:w-[2.5rem]" src={logo} alt="" />
       {/* pc */}
       <div className="hidden custom879:flex justify-center items-center space-x-10 ">
         {Navbar_navLinks.map((item, index) => {
           return (
-            <div className="text-white fontymoni cursor-pointer" key={item.id}>
+            <div className="text-white fontPoppin cursor-pointer" key={item.id}>
               {item.title}
             </div>
           );
@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className="hidden custom879:flex items-center justify-between space-x-8 ">
         <p
           onClick={() => navigate("/login")}
-          className="text-white fontymoni cursor-pointer "
+          className="text-white fontPoppin cursor-pointer "
         >
           Login
         </p>
@@ -57,7 +57,7 @@ const Navbar = () => {
           {Navbar_navLinks.map((item, index) => {
             return (
               <div
-                className="text-black fontymoni cursor-pointer mt-[4.1rem]"
+                className="text-black fontPoppin cursor-pointer mt-[4.1rem]"
                 key={item.id}
               >
                 {item.title}
@@ -67,7 +67,7 @@ const Navbar = () => {
           <div className="flex custom879:hidden flex-col items-center space-y-3 absolute bottom-[4rem] right-2 ">
             <p
               onClick={() => navigate("/login")}
-              className="text-black fontymoni cursor-pointer "
+              className="text-black fontPoppin cursor-pointer "
             >
               Login
             </p>

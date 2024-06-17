@@ -18,7 +18,7 @@ const Footer = () => {
           {Footer_navLinks.map((item, index) => {
             return (
               <div
-                className="text-black fontymoni cursor-pointer"
+                className="text-black fontPoppin cursor-pointer"
                 key={item.id}
               >
                 {item.title}

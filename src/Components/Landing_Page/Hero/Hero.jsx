@@ -12,7 +12,7 @@ const Hero = () => {
         <h1 className="monospace text-3xl text-[#ffffff] font-bold">
           Start chatting with anyone, anytime, anywhere with Polyglot
         </h1>
-        <p className="fontymoni text-sm text-[#e6e6e6]">
+        <p className="fontPoppin text-sm text-[#e6e6e6]">
           Great software that allows you to chat from any place at any time
           without any interruption
         </p>

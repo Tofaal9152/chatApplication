@@ -1,43 +1,42 @@
 export const Navbar_navLinks = [
-    {
-        id: "Demos",
-        title: "Demos",
-    },
-    {
-        id: "About",
-        title: "About",
-    },
-    {
-        id: "Blog",
-        title: "Blog",
-    },
-    {
-        id: "Pages",
-        title: "Pages",
-    },
-    {
-        id: "Contact",
-        title: "Contact",
-    },
+  {
+    id: "Demos",
+    title: "Demos",
+  },
+  {
+    id: "About",
+    title: "About",
+  },
+  {
+    id: "Blog",
+    title: "Blog",
+  },
+  {
+    id: "Pages",
+    title: "Pages",
+  },
+  {
+    id: "Contact",
+    title: "Contact",
+  },
 ];
 export const Footer_navLinks = [
-    
-    {
-        id: "About",
-        title: "About",
-    },
-    {
-        id: "Features",
-        title: "Features",
-    },
-    {
-        id: "Works",
-        title: "Works",
-    },
-    {
-        id: "Support",
-        title: "Support",
-    },
+  {
+    id: "About",
+    title: "About",
+  },
+  {
+    id: "Features",
+    title: "Features",
+  },
+  {
+    id: "Works",
+    title: "Works",
+  },
+  {
+    id: "Support",
+    title: "Support",
+  },
 ];
 
 // Messenger
@@ -50,19 +49,19 @@ import Avater from "../assets/Avater.jpeg";
 export const Messenger_NavIcon = [
   {
     id: "FaBookmark",
-    icon: <FaBookmark size={23} />,
+    icon: <FaBookmark size={27} />,
   },
   {
     id: "MdGroups",
-    icon: <MdGroups size={23} />,
+    icon: <MdGroups size={27} />,
   },
   {
     id: "moonstar",
-    icon: <img src={moonstar} alt="Moon and Star" width="23" height="23" />,
+    icon: <img src={moonstar} alt="Moon and Star" width="27" height="27" />,
   },
   {
     id: "IoMdSettings",
-    icon: <IoMdSettings size={23} />,
+    icon: <IoMdSettings size={27} />,
   },
 ];
 export const Messenger_Recent = [
@@ -84,6 +83,30 @@ export const Messenger_Recent = [
   },
 ];
 export const messageContaineer = [
+  {
+    img: Avater,
+    avatat_name: "md tofaal ahmed ",
+    avatat_Text: "Recenasdsdasdasdaasdadasdt",
+    time: "12:30",
+  },
+  {
+    img: Avater,
+    avatat_name: "md tofaal ahmed ",
+    avatat_Text: "Recenasdsdasdasdaasdadasdt",
+    time: "12:30",
+  },
+  {
+    img: Avater,
+    avatat_name: "md tofaal ahmed ",
+    avatat_Text: "Recenasdsdasdasdaasdadasdt",
+    time: "12:30",
+  },
+  {
+    img: Avater,
+    avatat_name: "md tofaal ahmed ",
+    avatat_Text: "Recenasdsdasdasdaasdadasdt",
+    time: "12:30",
+  },
   {
     img: Avater,
     avatat_name: "md tofaal ahmed ",
@@ -144,5 +167,86 @@ export const messageContaineer = [
     avatat_name: "md tofaal ahmed",
     avatat_Text: "Recent",
     time: "12:30",
+  },
+];
+// Conversations
+import Avatar from "../assets/Avater.jpeg";
+ 
+export const chating_between = [
+  {
+    // ME
+    MyText: `vLorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            quos atque labore quasi laborum? Omnis enim, ab a nihil quam quo
+            unde asperiores sapiente, ipsam similique praesentium vero. quos
+            atque labore quasi laborum? Omnis enim, ab a nihil quam quo unde
+            asperiores sapiente, ipsam similique praesentium vero. quos atque
+            labore quasi laborum? Omnis enim, ab a n`,
+    MyTime: `12:30`,
+    // Friend
+    FriendImage:Avatar,
+    FriendText: `vLorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            quos atque labore quasi laborum? Omnis enim, ab a nihil quam quo
+            unde asperiores sapiente, ipsam similique praesentium vero. quos
+            atque labore quasi laborum? Omnis enim, ab a nihil quam quo unde
+            asperiores sapiente, ipsam similique praesentium vero. quos atque
+            labore quasi laborum? Omnis enim, ab a n`,
+    MyTime: `12:30`,
+  },
+  {
+    // ME
+    MyText: `vLorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            quos atque labore quasi laborum? Omnis enim, ab a nihil quam quo
+            unde asperiores sapiente, ipsam similique praesentium vero. quos
+            atque labore quasi laborum? Omnis enim, ab a nihil quam quo unde
+            asperiores sapiente, ipsam similique praesentium vero. quos atque
+            labore quasi laborum? Omnis enim, ab a n`,
+    MyTime: `12:30`,
+    // Friend
+    FriendImage:Avatar,
+    FriendText: `vLorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            quos atque labore quasi laborum? Omnis enim, ab a nihil quam quo
+            unde asperiores sapiente, ipsam similique praesentium vero. quos
+            atque labore quasi laborum? Omnis enim, ab a nihil quam quo unde
+            asperiores sapiente, ipsam similique praesentium vero. quos atque
+            labore quasi laborum? Omnis enim, ab a n`,
+    MyTime: `12:30`,
+  },
+  {
+    // ME
+    MyText: `vLorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            quos atque labore quasi laborum? Omnis enim, ab a nihil quam quo
+            unde asperiores sapiente, ipsam similique praesentium vero. quos
+            atque labore quasi laborum? Omnis enim, ab a nihil quam quo unde
+            asperiores sapiente, ipsam similique praesentium vero. quos atque
+            labore quasi laborum? Omnis enim, ab a n`,
+    MyTime: `12:30`,
+    // Friend
+    FriendImage:Avatar,
+    FriendText: `vLorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            quos atque labore quasi laborum? Omnis enim, ab a nihil quam quo
+            unde asperiores sapiente, ipsam similique praesentium vero. quos
+            atque labore quasi laborum? Omnis enim, ab a nihil quam quo unde
+            asperiores sapiente, ipsam similique praesentium vero. quos atque
+            labore quasi laborum? Omnis enim, ab a n`,
+    MyTime: `12:30`,
+  },
+  {
+    // ME
+    MyText: `vLorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            quos atque labore quasi laborum? Omnis enim, ab a nihil quam quo
+            unde asperiores sapiente, ipsam similique praesentium vero. quos
+            atque labore quasi laborum? Omnis enim, ab a nihil quam quo unde
+            asperiores sapiente, ipsam similique praesentium vero. quos atque
+            labore quasi laborum? Omnis enim, ab a n`,
+    MyTime: `12:30`,
+    // Friend
+    FriendImage:Avatar,
+    FriendText: `vLorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            quos atque labore quasi laborum? Omnis enim, ab a nihil quam quo
+            unde asperiores sapiente, ipsam similique praesentium vero. quos
+            atque labore quasi laborum? Omnis enim, ab a nihil quam quo unde
+            asperiores sapiente, ipsam similique praesentium vero. quos atque
+            labore quasi laborum? Omnis enim, ab a n`,
+    MyTime: `12:30`,
   },
 ];

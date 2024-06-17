@@ -3,52 +3,50 @@ import React from "react";
 import { BsFillPlusCircleFill } from "react-icons/bs";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { CiSearch } from "react-icons/ci";
-import Avatar from "../../../assets/Avater.jpeg";
 import { Messenger_NavIcon } from "../../../constants";
 import { Messenger_Recent } from "../../../constants";
 import { messageContaineer } from "../../../constants";
 
-
 const Chat = () => {
   return (
-    <div className="w-[25vw] flex flex-col h-screen overflow-y-hidden border-[1px] border-[#D4D4DD]">
+    <div className="flexWidth1 flex flex-col h-screen overflow-y-hidden ">
       {/* heading Nav */}
-      <div className="icons flex items-center justify-evenly h-[98px] my-[0.8rem]">
-        {Messenger_NavIcon.map((items, index) => {
-          return (
+      <div className="">
+        <div className="icons flex items-center justify-evenly p-5">
+          {Messenger_NavIcon.map((items, index) => (
             <div
               key={items.id}
               className="p-2 block bg-[#E1E1E9] rounded-md cursor-pointer"
             >
               {items.icon}
             </div>
-          );
-        })}
+          ))}
+        </div>
       </div>
 
-      <div className="p-3">
+      <div className="p-4">
         {/* heading */}
-        <div className=" space-y-3">
-          <div className="ChatsAndPlusIcon flex justify-between items-center  ">
+        <div className="space-y-5">
+          <div className="ChatsAndPlusIcon flex justify-between items-center">
             <h1 className="text-[2rem] font-bold">Chats</h1>
             <BsFillPlusCircleFill className="text-[#8D46F6]" size={40} />
           </div>
-          {/* fropdown */}
+          {/* dropdown */}
           <div className="flex items-center justify-between text-[#7C8092]">
-            {Messenger_Recent.map((items, index) => {
-              return <p key={items.id}>{items.message}</p>;
-            })}
+            {Messenger_Recent.map((items, index) => (
+              <p key={items.id}>{items.message}</p>
+            ))}
             <RiArrowDropDownLine size={25} />
           </div>
           {/* Search */}
-          <div className="search shadow-lg">
-            <div className="flex space-x-2 items-center justify-start bg-white rounded-md p-1 h-[2.5rem] border-[#7C8092] border-[1px]">
-              <div className="p-1">
+          <div className="search">
+            <div className="p-6 flex space-x-2 items-center justify-start bg-white rounded-md h-[2.5rem] border-[#7C8092] border-[1px]">
+              <div className="p-">
                 <CiSearch size={16} />
               </div>
               <input
                 placeholder="Search for people..."
-                className="outline-none bg-transparent text-sm text-[#7C8092] "
+                className="outline-none bg-transparent text-xl text-[#7C8092]"
                 type="text"
               />
             </div>
@@ -85,7 +83,6 @@ const Chat = () => {
                         item.avatat_name
                       )}
                     </h1>
-
                     <p className="text-[#7C8092] text-[1rem] truncate overflow-hidden">
                       {item.avatat_Text.length > 10
                         ? item.avatat_Text.substring(0, 15) + "..."
