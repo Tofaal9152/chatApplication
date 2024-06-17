@@ -11,17 +11,15 @@ const Chat = () => {
   return (
     <div className="flexWidth1 flex flex-col h-screen overflow-y-hidden ">
       {/* heading Nav */}
-      <div className="">
-        <div className="icons flex items-center justify-evenly p-5">
-          {Messenger_NavIcon.map((items, index) => (
-            <div
-              key={items.id}
-              className="p-2 block bg-[#E1E1E9] rounded-md cursor-pointer"
-            >
-              {items.icon}
-            </div>
-          ))}
-        </div>
+      <div className="icons flex items-center justify-evenly p-5">
+        {Messenger_NavIcon.map((items, index) => (
+          <div
+            key={items.id}
+            className="p-2 block bg-[#E1E1E9] rounded-md cursor-pointer"
+          >
+            {items.icon}
+          </div>
+        ))}
       </div>
 
       <div className="p-4">
@@ -53,7 +51,7 @@ const Chat = () => {
           </div>
           {/* Chats */}
           <div
-            className="flex flex-col space-y-2 h-[100vh] overflow-y-auto p-1"
+            className="flex flex-col space-y-2 overflow-y-auto p-1 h-[64vh]"
             style={{ scrollbarWidth: "thin" }}
           >
             {messageContaineer.map((item, index) => (
