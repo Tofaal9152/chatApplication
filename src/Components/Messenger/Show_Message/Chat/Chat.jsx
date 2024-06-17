@@ -2,21 +2,23 @@ import React from "react";
 // react icons
 import { RiCheckDoubleFill } from "react-icons/ri";
 // Constants
-import { chating_between } from "../../../constants";
+import { chating_between } from "../../../../constants";
 
 const MeAndFriendConversation = () => {
   return (
     <div
       // style={{ scrollbarWidth: "thin" }}
-      className="hide_scroll flex flex-col p-3 mt-4 overflow-y-auto h-[75vh] space-y-5"
+      className="hide_scroll flex flex-col overflow-y-auto h-full space-y-5 px-[7rem] bg-[#F5F5F7]"
     >
       {chating_between.map((item, index) => {
         return (
           <div key={index} className="">
             {/* ME */}
             <div className="My flex justify-end items-start mb-4">
-              <div className="bg-[#E8F3FD] text-white p-3 rounded-lg max-w-[70%] space-y-4">
-                <p className="text-md text-black">{item.MyText}</p>
+              <div className="bg-[#E8F3FD] text-white p-3 rounded-lg max-w-[70%] space-y-1">
+                <p className="text-sm text-black leading-relaxed">
+                  {item.MyText}
+                </p>
                 <div className="flex items-center justify-between">
                   <p className="text-xs text-[#7C8092]">{item.MyTime}</p>
                   {/* Replace "sent" text with image */}
@@ -31,8 +33,8 @@ const MeAndFriendConversation = () => {
                 src={item.FriendImage}
                 alt="Friend"
               />
-              <div className="bg-white p-3 rounded-lg max-w-[70%] space-y-4">
-                <p className="text-md">{item.FriendText}</p>
+              <div className="bg-white p-3 rounded-lg max-w-[70%] space-y-1">
+                <p className="text-sm">{item.FriendText}</p>
                 <div className="flex items-center justify-between">
                   <p className="text-xs text-[#7C8092]">{item.FriendMyTime}</p>
                   {/* Replace "sent" text with image */}
