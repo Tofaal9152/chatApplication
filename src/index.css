@@ -26,12 +26,7 @@
 }
 
 .flexWidth2 {
-    flex: 3;
-    /* flex: ; */
-}
-.flexWidth3 {
-    flex: 0.5;
-    /* flex: ; */
+    flex: 3.5;
 }
 
 * {

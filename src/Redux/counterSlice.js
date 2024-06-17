@@ -4,26 +4,18 @@ export const counterSlice = createSlice({
     name: 'counter',
     initialState: {
         value: 0,
+        open_notification:false,
     },
     reducers: {
-        increment: (state) => {
-            // Redux Toolkit allows us to write "mutating" logic in reducers. It
-            // doesn't actually mutate the state because it uses the Immer library,
-            // which detects changes to a "draft state" and produces a brand new
-            // immutable state based off those changes.
-            // Also, no return statement is required from these functions.
-            state.value += 1
+        
+        setopen_notification: (state) => {
+            state.open_notification = !state.open_notification
         },
-        decrement: (state) => {
-            state.value -= 1
-        },
-        incrementByAmount: (state, action) => {
-            state.value += action.payload
-        },
+        
     },
 })
 
 // Action creators are generated for each case reducer function
-export const { increment, decrement, incrementByAmount } = counterSlice.actions
+export const { setopen_notification } = counterSlice.actions
 
 export default counterSlice.reducer

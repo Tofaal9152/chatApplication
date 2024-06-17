@@ -183,14 +183,14 @@ export const chating_between = [
             labore quasi laborum? Omnis enim, ab a n`,
     MyTime: `12:30`,
     // Friend
-    FriendImage:Avatar,
+    FriendImage: Avatar,
     FriendText: `vLorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
             quos atque labore quasi laborum? Omnis enim, ab a nihil quam quo
             unde asperiores sapiente, ipsam similique praesentium vero. quos
             atque labore quasi laborum? Omnis enim, ab a nihil quam quo unde
             asperiores sapiente, ipsam similique praesentium vero. quos atque
             labore quasi laborum? Omnis enim, ab a n`,
-    MyTime: `12:30`,
+    FriendMyTime: `12:30`,
   },
   {
     // ME
@@ -202,14 +202,14 @@ export const chating_between = [
             labore quasi laborum? Omnis enim, ab a n`,
     MyTime: `12:30`,
     // Friend
-    FriendImage:Avatar,
+    FriendImage: Avatar,
     FriendText: `vLorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
             quos atque labore quasi laborum? Omnis enim, ab a nihil quam quo
             unde asperiores sapiente, ipsam similique praesentium vero. quos
             atque labore quasi laborum? Omnis enim, ab a nihil quam quo unde
             asperiores sapiente, ipsam similique praesentium vero. quos atque
             labore quasi laborum? Omnis enim, ab a n`,
-    MyTime: `12:30`,
+    FriendMyTime: `12:30`,
   },
   {
     // ME
@@ -221,14 +221,14 @@ export const chating_between = [
             labore quasi laborum? Omnis enim, ab a n`,
     MyTime: `12:30`,
     // Friend
-    FriendImage:Avatar,
+    FriendImage: Avatar,
     FriendText: `vLorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
             quos atque labore quasi laborum? Omnis enim, ab a nihil quam quo
             unde asperiores sapiente, ipsam similique praesentium vero. quos
             atque labore quasi laborum? Omnis enim, ab a nihil quam quo unde
             asperiores sapiente, ipsam similique praesentium vero. quos atque
             labore quasi laborum? Omnis enim, ab a n`,
-    MyTime: `12:30`,
+    FriendMyTime: `12:30`,
   },
   {
     // ME
@@ -240,13 +240,14 @@ export const chating_between = [
             labore quasi laborum? Omnis enim, ab a n`,
     MyTime: `12:30`,
     // Friend
-    FriendImage:Avatar,
+    FriendImage: Avatar,
     FriendText: `vLorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
             quos atque labore quasi laborum? Omnis enim, ab a nihil quam quo
             unde asperiores sapiente, ipsam similique praesentium vero. quos
             atque labore quasi laborum? Omnis enim, ab a nihil quam quo unde
             asperiores sapiente, ipsam similique praesentium vero. quos atque
             labore quasi laborum? Omnis enim, ab a n`,
-    MyTime: `12:30`,
+    FriendMyTime: `12:30`,
   },
+  
 ];

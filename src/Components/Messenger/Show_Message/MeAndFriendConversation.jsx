@@ -32,9 +32,9 @@ const MeAndFriendConversation = () => {
                 alt="Friend"
               />
               <div className="bg-white p-3 rounded-lg max-w-[70%] space-y-4">
-                <p className="text-sm">{item.FriendText}</p>
+                <p className="text-md">{item.FriendText}</p>
                 <div className="flex items-center justify-between">
-                  <p className="text-xs text-[#7C8092]">{item.MyTime}</p>
+                  <p className="text-xs text-[#7C8092]">{item.FriendMyTime}</p>
                   {/* Replace "sent" text with image */}
                   <RiCheckDoubleFill className="text-[#30323E]" />
                 </div>
