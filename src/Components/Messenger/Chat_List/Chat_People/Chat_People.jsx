@@ -39,7 +39,7 @@ const Chat_People = () => {
       </div>
       {/* Chats */}
       <div
-        className=" flex flex-col overflow-y-auto h-screen space-y-2"
+        className=" flex flex-col overflow-y-auto h-screen space-y-2 pr-1"
         style={{ scrollbarWidth: "thin" }}
       >
         {messageContaineer.map((item, index) => (

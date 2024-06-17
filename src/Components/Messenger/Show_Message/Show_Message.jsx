@@ -21,16 +21,16 @@ const MsxContainer = () => {
       <div className="flex items-center justify-between p-[0.7rem] px-[5rem] shadow-md bg-white">
         <div className="flex justify-start items-start space-x-3">
           <img
-            className="w-[40px] h-[40px] ring-2 ring-black rounded-[50%] object-cover"
+            className="w-[1.7rem] h-[1.7rem] ring-2 ring-green-500 rounded-full object-cover"
             src={Avatar}
             alt="User Avatar"
           />
 
           <div className="flex flex-col">
-            <h1 className="text-[1rem] font-semibold text-[#191816]">
+            <h1 className="text-sm font-semibold text-[#191816]">
               Mindy Moores
             </h1>
-            <p className="text-[#7C8092] text-[0.7rem]">
+            <p className="text-[#7C8092] text-xs">
               Last seen 15 minutes ago
             </p>
           </div>
