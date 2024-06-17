@@ -30,20 +30,19 @@ const MsxContainer = () => {
   };
   console.log(text);
   return (
-    <div className="flexWidth2 bg-[#F5F5F7]  flex flex-col relative border-x-[1px] border-[#D4D4DD]">
+    <div className="flexWidth2  bg-[#F5F5F7]  flex flex-col relative border-x-[1px] border-[#D4D4DD]">
       <div className="flex ">
         {/* 1 */}
         <div className="">
           {/* Navigation */}
           <div className="flex items-center justify-between p-5 shadow-md bg-white">
             <div className="flex justify-start items-start space-x-3">
-              <div className="p-2 bg-black rounded-full">
-                <img
-                  className="w-[37px] h-[37px] rounded-[50%] object-cover"
-                  src={Avatar} // Corrected from Avater to Avatar
-                  alt="User Avatar"
-                />
-              </div>
+              <img
+                className="w-[40px] h-[40px] ring-2 ring-black rounded-[50%] object-cover"
+                src={Avatar} // Corrected from Avater to Avatar
+                alt="User Avatar"
+              />
+
               <div className="flex flex-col">
                 <h1 className="text-[1rem] font-semibold text-[#191816]">
                   Mindy Moores
@@ -64,7 +63,7 @@ const MsxContainer = () => {
                 className="p-3 cursor-pointer items-center justify-center bg-white rounded-full shadow-md"
               >
                 <IoIosNotifications
-                  className="cursor-pointer text-[#8D46F6] hover:text-yellow-500"
+                  className="cursor-pointer text-green-500 hover:text-yellow-500"
                   size={30}
                 />
               </div>
@@ -74,7 +73,7 @@ const MsxContainer = () => {
           {/* Showing Message */}
           <MeAndFriendConversation />
           {/* Messages Section */}
-          <div className="flex justify-center border-4 items-center relative bottom-0 space-x-4 p-2 rounded-lg shadow-md bg-white w-full">
+          <div className="flex justify-center   items-center relative bottom-0 space-x-4 p-4 rounded-lg shadow-md bg-white w-full">
             <span className="cursor-pointer">
               <IoLinkOutline size={25} />
             </span>
@@ -100,7 +99,7 @@ const MsxContainer = () => {
               <FaMicrophone size={25} />
             </span>
             <span className="cursor-pointer ">
-              <IoIosSend className="text-[#A144FB]" size={35} />
+              <IoIosSend className="text-green-500" size={35} />
             </span>
           </div>
         </div>

@@ -1,40 +1,69 @@
-import React from "react";
+import React, { useState } from "react";
 // react icons
 import { BsFillPlusCircleFill } from "react-icons/bs";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { CiSearch } from "react-icons/ci";
+import { IoMdSettings } from "react-icons/io";
+import Avater from "../../../assets/Avater.jpeg";
 import { Messenger_NavIcon } from "../../../constants";
 import { Messenger_Recent } from "../../../constants";
 import { messageContaineer } from "../../../constants";
+import Setting from "./Setting/Setting";
+// Redux
+import { useDispatch, useSelector } from "react-redux";
+import { setclicked_Setting } from "../../../Redux/counterSlice";
 
 const Chat = () => {
-  return (
-    <div className="flexWidth1 flex flex-col h-screen overflow-y-hidden ">
-      {/* heading Nav */}
-      <div className="icons flex items-center justify-evenly p-5">
-        {Messenger_NavIcon.map((items, index) => (
-          <div
-            key={items.id}
-            className="p-2 block bg-[#E1E1E9] rounded-md cursor-pointer"
-          >
-            {items.icon}
-          </div>
-        ))}
-      </div>
+  const clicked_Setting = useSelector((state) => state.counter.clicked_Setting);
+  const dispatch =useDispatch()
 
-      <div className="p-4">
+
+  return (
+    <div className="flexWidth1 relative flex flex-col h-screen overflow-y-hidden p-4 space-y-5">
+      {/* Setting */}
+      <div
+        className={`${
+          clicked_Setting ? "left-0" : "left-[-45rem]"
+        } h-screen w-[full] top-0  sidebar duration-500 absolute bg-white`}
+      >
+        <Setting/>
+      </div>
+      {/* heading Nav */}
+      <div className="icons flex items-center justify-between">
+        <div className="profile flex items-center justify-center space-x-3">
+          <img
+            className="w-[3.5rem] h-[3.5rem] rounded-full object-cover ring-2 ring-green-500 shadow-md"
+            src={Avater}
+            alt=""
+          />
+          <h1 className="text-2xl  font-bold text-[#191816]">Gal Gadot</h1>
+        </div>
+        <div
+          onClick={() => dispatch(setclicked_Setting())}
+          className="p-2 block  rounded-full cursor-pointer bg-green-500"
+        >
+          <IoMdSettings size={25} className="text-white" />
+        </div>
+      </div>
+      {/*  */}
+      <div className="">
         {/* heading */}
         <div className="space-y-5">
           <div className="ChatsAndPlusIcon flex justify-between items-center">
             <h1 className="text-[2rem] font-bold">Chats</h1>
-            <BsFillPlusCircleFill className="text-[#8D46F6]" size={40} />
+            <BsFillPlusCircleFill className="text-green-500" size={40} />
           </div>
           {/* dropdown */}
           <div className="flex items-center justify-between text-[#7C8092]">
             {Messenger_Recent.map((items, index) => (
-              <p key={items.id}>{items.message}</p>
+              <p
+                className="hover:underline cursor-pointer duration-500"
+                key={items.id}
+              >
+                {items.message}
+              </p>
             ))}
-            <RiArrowDropDownLine size={25} />
+            <RiArrowDropDownLine className="cursor-pointer" size={25} />
           </div>
           {/* Search */}
           <div className="search">
@@ -44,14 +73,14 @@ const Chat = () => {
               </div>
               <input
                 placeholder="Search for people..."
-                className="outline-none bg-transparent text-xl text-[#7C8092]"
+                className="outline-none bg-transparent text-xl text-[#191816]"
                 type="text"
               />
             </div>
           </div>
           {/* Chats */}
           <div
-            className="flex flex-col space-y-2 overflow-y-auto p-1 h-[64vh]"
+            className=" flex flex-col space-y-2 overflow-y-auto p-1 h-screen"
             style={{ scrollbarWidth: "thin" }}
           >
             {messageContaineer.map((item, index) => (
@@ -92,7 +121,7 @@ const Chat = () => {
                   <div className="time text-[#7C8092] text-[0.75rem]">
                     {item.time}
                   </div>
-                  <div className="bg-[#8D46F6] w-[20px] h-[20px] rounded-[50%] flex items-center justify-center">
+                  <div className="bg-green-500 w-[20px] h-[20px] rounded-[50%] flex items-center justify-center">
                     <p className="text-white text-[12px]">1</p>
                   </div>
                 </div>

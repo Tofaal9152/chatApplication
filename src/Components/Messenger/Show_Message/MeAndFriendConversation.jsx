@@ -7,8 +7,8 @@ import { chating_between } from "../../../constants";
 const MeAndFriendConversation = () => {
   return (
     <div
-      style={{ scrollbarWidth: "thin" }}
-      className="flex flex-col p-3 mt-4 overflow-y-auto h-[75vh] space-y-5"
+      // style={{ scrollbarWidth: "thin" }}
+      className="hide_scroll flex flex-col p-3 mt-4 overflow-y-auto h-[75vh] space-y-5"
     >
       {chating_between.map((item, index) => {
         return (
