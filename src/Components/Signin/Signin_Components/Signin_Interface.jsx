@@ -11,7 +11,7 @@ const Signin = () => {
   const [Checkedddd, setCheckedddd] = useState(false);
   const navigate = useNavigate();
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex h-screen flex-col items-center justify-center">
       {/* first */}
       <div className="fontimonti text-center flex flex-col items-center justify-center space-y-4">
         <img
