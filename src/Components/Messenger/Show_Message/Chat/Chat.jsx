@@ -8,7 +8,7 @@ const MeAndFriendConversation = () => {
   return (
     <div
       // style={{ scrollbarWidth: "thin" }}
-      className="hide_scroll pt-[1rem] flex flex-col overflow-y-auto h-full space-y-5 px-[7rem] bg-[#F5F5F7]"
+      className="px-2 lg:px-[4rem] xl:px-[7rem] hide_scroll pt-[1rem] flex flex-col overflow-y-auto h-full space-y-5  bg-[#F5F5F7]"
     >
       {chating_between.map((item, index) => {
         return (

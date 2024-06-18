@@ -102,7 +102,7 @@ const Setting = () => {
             Change language
           </h1>
           <div>
-            <select class="w-full border border-gray-300 rounded px-2 py-1 text-xs outline-none bg-green-500 text-white font-semibold">
+            <select className="w-full border border-gray-300 rounded px-2 py-1 text-xs outline-none bg-green-500 text-white font-semibold">
               <option  className="bg-green-500 font-medium  " value="1">Bangla</option>
               <option  className="bg-green-500 font-medium  " value="2">English</option>
               <option  className="bg-green-500 font-medium  " value="3">Hindi</option>

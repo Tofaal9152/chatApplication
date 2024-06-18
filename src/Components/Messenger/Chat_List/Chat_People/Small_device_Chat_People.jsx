@@ -1,42 +1,14 @@
 import React from "react";
 // react icons
-import { BsFillPlusCircleFill } from "react-icons/bs";
-import { RiArrowDropDownLine } from "react-icons/ri";
-import { CiSearch } from "react-icons/ci";
-import { Messenger_Recent } from "../../../../constants";
+// import { BsFillPlusCircleFill } from "react-icons/bs";
+// import { RiArrowDropDownLine } from "react-icons/ri";
+// import { CiSearch } from "react-icons/ci";
+// import { Messenger_Recent } from "../../../../constants";
 import { messageContaineer } from "../../../../constants";
 
 const Chat_People = () => {
   return (
     <div className="space-y-3">
-      {/* heading */}
-      <div className="ChatsAndPlusIcon flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Chats</h1>
-        <BsFillPlusCircleFill
-          className="text-green-500 cursor-pointer"
-          size={27}
-        />
-      </div>
-      {/* dropdown */}
-      <div className="flex items-center justify-between text-[#7C8092]">
-        {Messenger_Recent.map((items, index) => (
-          <p className="hover:underline text-sm cursor-pointer" key={items.id}>
-            {items.message}
-          </p>
-        ))}
-        <RiArrowDropDownLine className="cursor-pointer" size={25} />
-      </div>
-      {/* Search */}
-      <div className="search">
-        <div className="p-2 flex items-center justify-start space-x-2 rounded-full bg-white  border-gray-300 border">
-          <CiSearch className="cursor-pointer" size={16} />
-          <input
-            placeholder="Search for people..."
-            className="outline-none bg-transparent text-sm text-[#191816]"
-            type="text"
-          />
-        </div>
-      </div>
       {/* Chats */}
       <div
         className=" flex flex-col overflow-y-auto h-screen space-y-2 p-1 "

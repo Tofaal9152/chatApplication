@@ -14,8 +14,8 @@ const Type_Message = () => {
     setopen_emoji(false);
   };
   return (
-    <div className=" flex absolute bottom-0  bg-white w-full border p-2 px-[7rem]">
-      <div className="flex justify-center items-center space-x-4  w-full">
+    <div className="px-[2rem] lg:px-[4rem] xl:px-[7rem] flex absolute bottom-0  bg-white w-full p-2">
+      <div className="flex justify-center items-center space-x-2 sm:space-x-4  w-full">
         {/*  */}
         <span className="cursor-pointer p-2 rounded-full hover:bg-gray-100">
           <IoLinkOutline size={20} />
@@ -46,7 +46,6 @@ const Type_Message = () => {
         <div className="cursor-pointer p-2 rounded-full bg-green-500 hover:bg-green-600">
           <IoIosSend className="text-white" size={22} />
         </div>
-
       </div>
     </div>
   );
