@@ -2,7 +2,7 @@ import React from "react";
 import Avatar from "../../../../assets/Avatar.jpeg";
 import { useDispatch } from "react-redux";
 import {
-    setSmall_device_Chat_Peopple,
+  setSmallDeviceChatPeople,
   setclicked_Setting,
   setopen_notification,
 } from "../../../../Redux/counterSlice";
@@ -21,7 +21,7 @@ const ResponsiveSidebar = () => {
           alt=""
         />
         <div
-          onClick={() => dispatch(setSmall_device_Chat_Peopple())}
+          onClick={() => dispatch(setSmallDeviceChatPeople())}
           className="custom500p-2 p-1 rounded-full bg-[#9746ff] hover:bg-[#8e3df8] cursor-pointer"
         >
           <TbMessageCircle2Filled size={20} className="text-white" />

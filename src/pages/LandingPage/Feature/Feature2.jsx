@@ -1,6 +1,6 @@
 import React from "react";
 // From Assets
-import Feature2_Messenger_pic from "../../../assets/Feature2_Messenger_pic.png";
+import featureMessenger from "../../../assets/featureMessenger.png";
 
 const Feature2 = () => {
   return (
@@ -16,7 +16,7 @@ const Feature2 = () => {
       <div>
         <img
           className="w-[470px]"
-          src={Feature2_Messenger_pic}
+          src={featureMessenger}
           alt="Messenger Illustration"
         />
       </div>

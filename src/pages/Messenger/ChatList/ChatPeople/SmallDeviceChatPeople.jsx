@@ -1,23 +1,18 @@
 import React from "react";
-// react icons
-// import { BsFillPlusCircleFill } from "react-icons/bs";
-// import { RiArrowDropDownLine } from "react-icons/ri";
-// import { CiSearch } from "react-icons/ci";
-// import { Messenger_Recent } from "../../../../constants";
-import { messageContaineer } from "../../../../constants";
+import { messageContainer } from "../../../../constants";
 
-const Chat_People = () => {
+const SmallDeviceChatPeople = () => {
   return (
     <div className="space-y-3">
       {/* Chats */}
       <div
-        className=" flex flex-col overflow-y-auto h-screen space-y-2 p-1 "
+        className=" flex flex-col overflow-y-auto h-screen space-y-2 p-1 dark:bg-[#241b30]"
         style={{ scrollbarWidth: "thin" }}
       >
-        {messageContaineer.map((item, index) => (
+        {messageContainer.map((item, index) => (
           <div
             key={index}
-            className="flex justify-between items-center border border-gray-300  cursor-pointer bg-white rounded-xl p-3 shadow-lg"
+            className="flex justify-between items-center border border-gray-300  cursor-pointer bg-white rounded-xl p-3 shadow-lg dark:bg-[#323232] dark:border-solid dark:border-[1px] dark:border-gray-700"
           >
             <div className="flex justify-start items-start space-x-3">
               <img
@@ -31,7 +26,7 @@ const Chat_People = () => {
                     item.avatar_name.length > 15
                       ? "flex flex-col items-start justify-start"
                       : ""
-                  } text-sm font-semibold text-[#191816] truncate`}
+                  } text-sm font-semibold text-[#191816] truncate dark:text-white`}
                 >
                   {item.avatar_name.length > 15 ? (
                     <span style={{ whiteSpace: "pre-wrap" }}>
@@ -61,4 +56,4 @@ const Chat_People = () => {
   );
 };
 
-export default Chat_People;
+export default SmallDeviceChatPeople;

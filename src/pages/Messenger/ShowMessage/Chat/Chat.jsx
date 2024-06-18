@@ -15,13 +15,13 @@ const MeAndFriendConversation = () => {
   };
 
   return (
-    <div className="mb-[4rem] px-2 lg:px-[4rem] xl:px-[7rem] hide_scroll pt-[1rem] flex flex-col overflow-y-auto h-full space-y-5 bg-[#F5F5F7]">
+    <div className="mb-[4rem] px-2 lg:px-[4rem] xl:px-[7rem] hide_scroll pt-[1rem] flex flex-col overflow-y-auto h-full space-y-5 bg-[#F5F5F7] dark:bg-[#1e2021]">
       {chating_between.map((item, index) => (
         <div key={index} className="">
           {/* ME */}
           <div className="My flex justify-end items-start mb-4">
-            <div className="bg-[#E8F3FD] text-white p-3 rounded-lg max-w-[70%] space-y-1">
-              <p className="text-sm text-black leading-relaxed">
+            <div className="bg-[#E8F3FD] text-white p-3 rounded-lg max-w-[70%] space-y-1 dark:bg-[#6f34bc]">
+              <p className="text-sm text-black leading-relaxed dark:text-white">
                 {item.MyText}
               </p>
               <div className="flex items-center justify-between">
@@ -37,15 +37,15 @@ const MeAndFriendConversation = () => {
               src={item.FriendImage}
               alt="Friend"
             />
-            <div className="bg-white p-3 rounded-lg max-w-[70%] space-y-1">
-              <p className="text-sm">{item.FriendText}</p>
+            <div className="bg-white p-3 rounded-lg max-w-[70%] space-y-1 dark:bg-[#323232]">
+              <p className="text-sm dark:text-white">{item.FriendText}</p>
               <div className="flex items-center justify-between">
                 <p className="text-xs text-[#7C8092]">{item.FriendMyTime}</p>
                 <RiCheckDoubleFill className="text-[#30323E]" />
               </div>
               <div className="flex flex-col space-y-1 justify-start items-start mt-1">
                 <button
-                  className="text-xs text-gray-500 cursor-pointer hover:text-gray-900"
+                  className="text-xs text-gray-500 cursor-pointer hover:text-gray-900 dark:hover:text-white"
                   onClick={() => toggleTranslateMessage(item.FriendText)}
                 >
                   {messageToTranslate === item.FriendText

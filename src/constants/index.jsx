@@ -1,7 +1,6 @@
 import { FaBookmark } from "react-icons/fa";
 import { MdGroups } from "react-icons/md";
 import { IoMdSettings } from "react-icons/io";
-import moonstar from "../assets/Moon_star.png";
 import Avatar from "../assets/Avatar.jpeg";
 export const navbarNavLinks = [
   {
@@ -43,45 +42,8 @@ export const footerNavLinks = [
     title: "Support",
   },
 ];
-// Messenger
-export const Messenger_NavIcon = [
-  {
-    id: "FaBookmark",
-    icon: <FaBookmark size={27} />,
-  },
-  {
-    id: "MdGroups",
-    icon: <MdGroups size={27} />,
-  },
-  {
-    id: "moonstar",
-    icon: <img src={moonstar} alt="Moon and Star" width="27" height="27" />,
-  },
-  {
-    id: "IoMdSettings",
-    icon: <IoMdSettings size={27} />,
-  },
-];
-export const Messenger_Recent = [
-  {
-    id: "Recent",
-    message: "Recent",
-  },
-  {
-    id: "Publi",
-    message: "Publi",
-  },
-  {
-    id: "Private",
-    message: "Private",
-  },
-  {
-    id: "More",
-    message: "More",
-  },
-];
-// Chat_people
-export const messageContaineer = [
+
+export const messageContainer = [
   {
     img: Avatar,
     avatar_name: "Md Tofaal Ahmed",

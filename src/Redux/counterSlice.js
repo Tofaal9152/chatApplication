@@ -20,7 +20,7 @@ export const counterSlice = createSlice({
             state.Small_device_Chat_Peopple = false;
             state.clicked_Setting = !state.clicked_Setting
         },
-        setSmall_device_Chat_Peopple: (state) => {
+        setSmallDeviceChatPeople: (state) => {
             state.clicked_Setting = false;
             state.open_notification = false;
             state.Small_device_Chat_Peopple = !state.Small_device_Chat_Peopple
@@ -30,6 +30,6 @@ export const counterSlice = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const { setopen_notification, setclicked_Setting, setSmall_device_Chat_Peopple } = counterSlice.actions
+export const { setopen_notification, setclicked_Setting, setSmallDeviceChatPeople } = counterSlice.actions
 
 export default counterSlice.reducer

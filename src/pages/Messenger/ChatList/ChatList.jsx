@@ -3,15 +3,15 @@ import React from "react";
 import { useSelector } from "react-redux";
 // Components
 import Head from "./Head/Head";
-import Chat_People from "./Chat_People/Chat_People";
+import ChatPeople from "./ChatPeople/ChatPeople";
 import Setting from "./Setting/Setting";
 import ResponsiveSidebar from "./ResponsiveSidebar/ResponsiveSidebar";
 
 const ChatList = () => {
-  const clicked_Setting = useSelector((state) => state.counter.clicked_Setting);
+  const clickedSettings = useSelector((state) => state.counter.clicked_Setting);
 
   return (
-    <div className=" md:flex-none  md:relative flex md:flex-col md:h-screen md:overflow-y-hidden ">
+    <div className=" md:flex-none  md:relative flex md:flex-col md:h-screen md:overflow-y-hidden dark:bg-[#1e2021]">
       <div className="md:hidden block">
         <ResponsiveSidebar />
       </div>
@@ -21,12 +21,12 @@ const ChatList = () => {
             <Head />
           </div>
           <div>
-            <Chat_People />
+            <ChatPeople />
           </div>
         </div>
         <div
           className={`${
-            clicked_Setting ? "left-0" : "left-[-45rem]"
+            clickedSettings ? "left-0" : "left-[-45rem]"
           } md:block hidden h-screen w-[full] top-0 overflow-y-hidden  sidebar duration-500 absolute bg-white`}
         >
           <Setting />

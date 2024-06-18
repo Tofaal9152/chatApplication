@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // Images From Assets
-import Login_Brain_Logo from "../../assets/Login_Brain_Logo.png";
-import Login_Email_Logo from "../../assets/Login_Email_Logo.png";
+import Login_Brain_Logo from "../../assets/brainLogo.png";
+import Login_Email_Logo from "../../assets/loginEmailLogo.png";
 // Icons from React-Icons
 import { FaGoogle } from "react-icons/fa";
 import { FaVk } from "react-icons/fa";

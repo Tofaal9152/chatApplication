@@ -14,7 +14,7 @@ const Head = () => {
           src={Avatar}
           alt=""
         />
-        <h1 className="text-xl font-bold text-[#191816]">Gal Gadot</h1>
+        <h1 className="text-xl font-bold text-[#191816] dark:text-white">Gal Gadot</h1>
       </div>
       <div
         onClick={() => dispatch(setclicked_Setting())}

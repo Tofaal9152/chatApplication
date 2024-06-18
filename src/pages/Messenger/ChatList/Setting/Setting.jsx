@@ -22,7 +22,7 @@ const Setting = () => {
   };
 
   return (
-    <div className=" flex-col interfont flex items-center h-screen overflow-y-hidden p-4">
+    <div className=" flex-col interfont flex items-center h-screen overflow-y-hidden p-4 dark:bg-[#241b30]">
       {/* back */}
       <div
         onClick={() => dispatch(setclicked_Setting())}
@@ -46,13 +46,13 @@ const Setting = () => {
           {/* Add Image <input className="hidden" type="file"></input> */}
         </div>
         <div className="flex items-center  space-x-2">
-          <h1 className="text-xl font-semibold text-[#191816]">
+          <h1 className="text-xl font-semibold text-[#191816] dark:text-white">
             {profileName}
           </h1>
           <CiExport className="text-voilet-800  cursor-pointer" size={10} />
           {/* Add Image <input  className="hidden" type="file"></input> */}
         </div>
-        <p className="text-gray-600 text-sm">
+        <p className="text-gray-600 text-sm dark:text-gray-400">
           In real life, I'm the type of girl who doesn't take herself too
           seriously....
         </p>
@@ -63,7 +63,7 @@ const Setting = () => {
         <hr className="w-full h-[1px] border-none bg-[#9746ff]" />
         {/* Dark Mode */}
         <div className="flex items-center justify-between w-full duration-500 cursor-pointer">
-          <h1 className="text-md font-semibold text-gray-800">Dark Mode</h1>
+          <h1 className="text-md font-semibold text-gray-800 dark:text-white">Dark Mode</h1>
           {Dark_Mode_On_Off ? (
             <BiSolidToggleRight
               onClick={() => setDark_Mode_On_Off((e) => !e)}
@@ -80,7 +80,7 @@ const Setting = () => {
         </div>
         {/* Active status */}
         <div className="flex items-center justify-between w-full duration-500 cursor-pointer">
-          <h1 className="text-md font-semibold text-gray-800">Active status</h1>
+          <h1 className="text-md font-semibold text-gray-800 dark:text-white">Active status</h1>
           {active_On_Off ? (
             <BiSolidToggleRight
               onClick={() => setactive_On_Off((e) => !e)}
@@ -98,7 +98,7 @@ const Setting = () => {
         {/* Change language */}
 
         <div className="flex items-center justify-between w-full">
-          <h1 className="text-md font-semibold text-gray-800">
+          <h1 className="text-md font-semibold text-gray-800 dark:text-white">
             Change language
           </h1>
           <div>
@@ -118,24 +118,24 @@ const Setting = () => {
 
         {/* Switch Account */}
         <div className="flex items-center justify-between w-full">
-          <h1 className="text-md font-semibold text-gray-800">
+          <h1 className="text-md font-semibold text-gray-800 dark:text-white">
             Switch Account
           </h1>
-          <MdKeyboardArrowDown className="cursor-pointer" size={25} />
+          <MdKeyboardArrowDown className="cursor-pointer dark:text-white" size={25} />
         </div>
         {/* Help */}
         <div className="flex items-center justify-between w-full ">
-          <h1 className="text-md font-semibold text-gray-800">Help</h1>
+          <h1 className="text-md font-semibold text-gray-800 dark:text-white">Help</h1>
         </div>
         {/* Legal & Policies */}
         <div className="flex items-center justify-between w-full">
-          <h1 className="text-md font-semibold text-gray-800">
+          <h1 className="text-md font-semibold text-gray-800 dark:text-white">
             Legal & Policies
           </h1>
         </div>
         {/* Log Out */}
         <div className="flex items-center justify-end w-full absolute bottom-0">
-          <button className="px-2 font-semibold py-1 text-[#9746ff] bg-white border border-[#9746ff]  rounded hover:bg-[#8e3df8] hover:text-white duration-300 focus:outline-none">
+          <button className="px-2 font-semibold py-1 text-[#9746ff] border border-[#9746ff]  rounded hover:bg-[#8e3df8] hover:text-white duration-300 focus:outline-none">
             Log out
           </button>
         </div>

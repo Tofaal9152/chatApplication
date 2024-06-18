@@ -1,56 +1,33 @@
 import React from "react";
-// react icons
-// import { BsFillPlusCircleFill } from "react-icons/bs";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { CiSearch } from "react-icons/ci";
-import { Messenger_Recent } from "../../../../constants";
-import { messageContaineer } from "../../../../constants";
-//
-// import Head from "../Head/Head";
-// import { IoMdSettings } from "react-icons/io";
-// import Avater from "../../../../assets/Avater.jpeg";
-// import { useDispatch } from "react-redux";
-// import { setclicked_Setting } from "../../../../Redux/counterSlice";
-// import { CgWebsite } from "react-icons/cg";
-// import Change_Language from "../../Show_Message/Chat/TranslateMessage/TranslateMessage";
+// import { Messenger_Recent } from "../../../../constants";
+import { messageContainer } from "../../../../constants";
 
-const Chat_People = () => {
+const ChatPeople = () => {
   return (
     <div className="space-y-3 ">
       {/* heading */}
       <div className="ChatsAndPlusIcon flex justify-between items-center ">
-        <h1 className="text-2xl font-bold">Chats</h1>
-        {/* <BsFillPlusCircleFill
-          className="text-[#9746ff] cursor-pointer"
-          size={27}
-        /> */}
-      </div>
-      {/* dropdown */}
-      <div className="flex items-center justify-between text-[#7C8092]">
-        {Messenger_Recent.map((items, index) => (
-          <p className="hover:underline text-sm cursor-pointer" key={items.id}>
-            {items.message}
-          </p>
-        ))}
-        <RiArrowDropDownLine className="cursor-pointer" size={25} />
+        <h1 className="text-2xl font-bold dark:text-white">Chats</h1>
       </div>
       {/* Search */}
       <div className="search">
-        <div className="p-2 flex items-center justify-start space-x-2 rounded-full bg-white  border-gray-300 border">
-          <CiSearch className="cursor-pointer" size={16} />
+        <div className="p-2 flex items-center justify-start space-x-2 rounded-full bg-white  border-gray-300 border dark:bg-[#1e2021]">
+          <CiSearch className="cursor-pointer dark:text-white" size={16} />
           <input
             placeholder="Search for people..."
-            className="outline-none bg-transparent text-sm text-[#191816]"
+            className="outline-none bg-transparent text-sm text-[#191816] dark:text-white"
             type="text"
           />
         </div>
       </div>
       {/* Chats */}
-      <div className="relative custom-scrollbar flex flex-col  overflow-y-auto h-screen space-y-2 p-1 pb-[16rem]">
-        {messageContaineer.map((item, index) => (
+      <div className="relative custom-scrollbar flex flex-col overflow-y-auto h-[78vh] 2xl:h-[82vh] space-y-2 p-1 pb-[16rem]">
+        {messageContainer.map((item, index) => (
           <div
             key={index}
-            className="flex relative justify-between items-center border border-gray-300  cursor-pointer bg-white rounded-xl p-3 shadow-lg"
+            className="dark:bg-[#1e2021] dark:border-gray-700 flex relative justify-between items-center border border-gray-300  cursor-pointer bg-white rounded-xl p-3 shadow-lg"
           >
             <div className="flex justify-start items-start space-x-3">
               <img
@@ -64,7 +41,7 @@ const Chat_People = () => {
                     item.avatar_name.length > 15
                       ? "flex flex-col items-start justify-start"
                       : ""
-                  } text-sm font-semibold text-[#191816] truncate`}
+                  } text-sm font-semibold text-[#191816] truncate dark:text-white`}
                 >
                   {item.avatar_name.length > 15 ? (
                     <span style={{ whiteSpace: "pre-wrap" }}>
@@ -90,9 +67,8 @@ const Chat_People = () => {
           </div>
         ))}
       </div>
-      
     </div>
   );
 };
 
-export default Chat_People;
+export default ChatPeople;

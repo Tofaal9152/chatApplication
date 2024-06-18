@@ -1,6 +1,6 @@
 import React from "react";
 // From Assets
-import Feature1_Girl from "../../../assets/Feature1_Girl.jpeg";
+import featureGirl from "../../../assets/featureGirl.jpeg";
 
 const Feature1 = () => {
   return (
@@ -8,7 +8,7 @@ const Feature1 = () => {
       <div className="border-blue-500 border-[0.1rem]">
         <img
           className="w-[400px] flex-1"
-          src={Feature1_Girl}
+          src={featureGirl}
           alt="Feature Image"
         />
       </div>
