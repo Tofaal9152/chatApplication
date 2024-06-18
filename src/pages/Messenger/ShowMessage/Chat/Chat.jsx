@@ -25,7 +25,7 @@ const MeAndFriendConversation = () => {
                 {item.MyText}
               </p>
               <div className="flex items-center justify-between">
-                <p className="text-xs text-[#7C8092]">{item.MyTime}</p>
+                <p className="text-xs text-[#7C8092] dark:text-gray-300">{item.MyTime}</p>
                 <RiCheckDoubleFill className="text-[#30323E]" />
               </div>
             </div>

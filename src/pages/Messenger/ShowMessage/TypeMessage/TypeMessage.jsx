@@ -29,7 +29,7 @@ const TypeMessage = () => {
             type="text"
             value={text}
             onChange={(e) => settext(e.target.value)}
-            className="flex-1 p-2 text-black text-sm outline-none bg-transparent"
+            className="flex-1 p-2 text-black text-sm outline-none bg-transparent dark:text-white"
             placeholder="Type a message..."
           />
           <div
@@ -44,7 +44,7 @@ const TypeMessage = () => {
         </div>
         {/*  */}
         <div className="cursor-pointer p-1 custom500:p-2 rounded-full bg-[#9746ff] hover:bg-[#8e3df8] white">
-          <IoIosSend className="text-white " size={22} />
+          <IoIosSend className="text-white" size={22} />
         </div>
       </div>
     </div>
