@@ -4,9 +4,7 @@ import ChatList from "./ChatList/ChatList";
 import { useSelector } from "react-redux";
 
 const Messenger = () => {
-  const darkMode = useSelector((state) => {
-    state.counter.darkMode;
-  });
+  const darkMode = useSelector((state) => state.counter.darkMode);
 
   return (
     <div>

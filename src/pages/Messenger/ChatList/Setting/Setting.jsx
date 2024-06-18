@@ -17,7 +17,7 @@ const Setting = () => {
     state.counter.darkMode;
   });
 
-  const [Dark_Mode_On_Off, setDark_Mode_On_Off] = useState(true);
+  const [Dark_Mode_On_Off, setDark_Mode_On_Off] = useState(false);
   const [active_On_Off, setactive_On_Off] = useState(true);
   // Functionality
   const [profileImage, setProfileImage] = useState(Avatar);
@@ -75,18 +75,18 @@ const Setting = () => {
           </h1>
           {Dark_Mode_On_Off ? (
             <BiSolidToggleRight
-              onClick={() => {
-                dispatch(setDarkMode());
+              onClick={() => {                
                 setDark_Mode_On_Off((e) => !e);
+                dispatch(setDarkMode());
               }}
               size={35}
               className="text-[#9746ff]"
             />
           ) : (
             <BiSolidToggleLeft
-              onClick={() => {
-                dispatch(setDarkMode());              
+              onClick={() => {                
                 setDark_Mode_On_Off((e) => !e);
+                dispatch(setDarkMode());
               }}
               size={35}
               className="text-gray-500"
