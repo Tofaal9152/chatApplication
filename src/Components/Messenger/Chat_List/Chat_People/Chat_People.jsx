@@ -90,10 +90,7 @@ const Chat_People = () => {
           </div>
         ))}
       </div>
-      <div className="w-full flex p-2 items-center justify-evenly  cursor-pointer absolute left-0 bottom-0 bg-[#9746ff] hover:bg-[#7047a7] border  duration-300 text-white">
-        <CgWebsite size={25} className="text-white" />
-        <p className=" text-md font-bold ">Go To Main Website</p>
-      </div>
+      
     </div>
   );
 };
