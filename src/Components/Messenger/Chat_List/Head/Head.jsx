@@ -17,7 +17,7 @@ const Head = () => {
         <h1 className="text-xl font-bold text-[#191816]">Gal Gadot</h1>
       </div>
       <div
-        onClick={() => dispatch(setclicked_Setting)}
+        onClick={() => dispatch(setclicked_Setting())}
         className="p-2 rounded-full cursor-pointer bg-green-500 hover:bg-green-600"
       >
         <IoMdSettings size={20} className="text-white" />

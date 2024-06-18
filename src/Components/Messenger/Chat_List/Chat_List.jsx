@@ -10,17 +10,19 @@ const Chat = () => {
   const clicked_Setting = useSelector((state) => state.counter.clicked_Setting);
 
   return (
-    <div className="flexWidth1 relative flex flex-col h-screen overflow-y-hidden p-3 space-y-3">
-      <div>
-        <Head />
-      </div>
-      <div>
-        <Chat_People />
+    <div className="flexWidth1 relative flex flex-col h-screen overflow-y-hidden ">
+      <div className="p-2 space-y-5 ">
+        <div>
+          <Head />
+        </div>
+        <div>
+          <Chat_People />
+        </div>
       </div>
       <div
         className={`${
           clicked_Setting ? "left-0" : "left-[-45rem]"
-        } h-screen w-[full] top-0  sidebar duration-500 absolute bg-white`}
+        } h-screen w-[full] top-0 overflow-y-hidden  sidebar duration-500 absolute bg-white`}
       >
         <Setting />
       </div>
