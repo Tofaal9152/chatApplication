@@ -11,14 +11,18 @@ import { setopen_notification } from "../../../Redux/counterSlice";
 import Type_Message from "./Type_Message/Type_Message";
 import Setting from "../Chat_List/Setting/Setting";
 import Chat_List from "../Chat_List/Chat_List";
-import Small_device_Chat from "../Chat_List/Chat_People/Small_device_Chat_People"
+import Small_device_Chat from "../Chat_List/Chat_People/Small_device_Chat_People";
 const MsxContainer = () => {
   // Redux
   const dispatch = useDispatch();
   const clicked_Setting = useSelector((state) => state.counter.clicked_Setting);
-  const open_notification = useSelector((state) => state.counter.open_notification);
-  const Small_device_Chat_Peopple = useSelector((state) => state.counter.Small_device_Chat_Peopple);
-  
+  const open_notification = useSelector(
+    (state) => state.counter.open_notification
+  );
+  const Small_device_Chat_Peopple = useSelector(
+    (state) => state.counter.Small_device_Chat_Peopple
+  );
+
   return (
     <div className="flexWidth2 flex-1  h-screen flex flex-col relative bg- border-x-[1px] border-[#D4D4DD] overflow-x-hidden">
       {/*1. Nav */}

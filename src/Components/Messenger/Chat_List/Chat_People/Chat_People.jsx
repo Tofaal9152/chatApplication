@@ -5,10 +5,17 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import { CiSearch } from "react-icons/ci";
 import { Messenger_Recent } from "../../../../constants";
 import { messageContaineer } from "../../../../constants";
+//
+import Head from "../Head/Head";
+import { IoMdSettings } from "react-icons/io";
+import Avater from "../../../../assets/Avater.jpeg";
+import { useDispatch } from "react-redux";
+import { setclicked_Setting } from "../../../../Redux/counterSlice";
+import { CgWebsite } from "react-icons/cg";
 
 const Chat_People = () => {
   return (
-    <div className="space-y-3">
+    <div className="space-y-3 ">
       {/* heading */}
       <div className="ChatsAndPlusIcon flex justify-between items-center">
         <h1 className="text-2xl font-bold">Chats</h1>
@@ -39,7 +46,7 @@ const Chat_People = () => {
       </div>
       {/* Chats */}
       <div
-        className=" flex flex-col overflow-y-auto h-screen space-y-2 p-1 "
+        className="relative flex flex-col  overflow-y-auto h-screen space-y-2 p-1 pb-[16rem]"
         style={{ scrollbarWidth: "thin" }}
       >
         {messageContaineer.map((item, index) => (
@@ -84,6 +91,10 @@ const Chat_People = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="w-full flex p-2 items-center justify-evenly  cursor-pointer absolute left-0 bottom-0 bg-green-500 ">
+        <CgWebsite size={25} className="text-white" />
+        <p className="text-white font-sm font-bold">Go To Main Website</p>
       </div>
     </div>
   );
