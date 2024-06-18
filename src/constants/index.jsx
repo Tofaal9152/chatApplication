@@ -2,8 +2,8 @@ import { FaBookmark } from "react-icons/fa";
 import { MdGroups } from "react-icons/md";
 import { IoMdSettings } from "react-icons/io";
 import moonstar from "../assets/Moon_star.png";
-import Avatar from "../assets/Avater.jpeg";
-export const Navbar_navLinks = [
+import Avatar from "../assets/Avatar.jpeg";
+export const navbarNavLinks = [
   {
     id: "Demos",
     title: "Demos",
@@ -25,7 +25,7 @@ export const Navbar_navLinks = [
     title: "Contact",
   },
 ];
-export const Footer_navLinks = [
+export const footerNavLinks = [
   {
     id: "About",
     title: "About",

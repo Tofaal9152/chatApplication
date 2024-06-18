@@ -1,10 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App.jsx";
-import Login from './Components/LogIn/Login.jsx'
-import Signin from './Components/Signin/Signin_Components/Signin_Interface.jsx'
-import Messenger from "./Components/Messenger/Messenger.jsx"
+// import App from "./App.jsx";
+import LandingPage from "./pages/LandingPage/LandingPage.jsx";
+import Login from "./pages/LogIn/LoginInterface.jsx";
+import Signup from "./pages/Signup/SignupInterface.jsx";
+import Messenger from "./pages/Messenger/Messenger.jsx";
 // redux
 import { Provider } from "react-redux";
 import store from "./Redux/store.js";
@@ -14,15 +15,15 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <LandingPage />,
   },
   {
     path: "/login",
     element: <Login />,
   },
   {
-    path: "/signin",
-    element: <Signin />,
+    path: "/signup",
+    element: <Signup />,
   },
   {
     path: "/messenger",
