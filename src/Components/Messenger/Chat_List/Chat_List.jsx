@@ -11,11 +11,11 @@ const Chat = () => {
   const clicked_Setting = useSelector((state) => state.counter.clicked_Setting);
 
   return (
-    <div className="w-[10%] md:w-[25vw] md:flex-none  md:relative flex md:flex-col md:h-screen md:overflow-y-hidden ">
+    <div className=" md:flex-none  md:relative flex md:flex-col md:h-screen md:overflow-y-hidden ">
       <div className="md:hidden block">
         <ResponsiveSidebar />
       </div>
-      <div className="md:block hidden">
+      <div className="md:block hidden w-[18rem] xl:w-[25vw]">
         <div className="p-2 space-y-5 ">
           <div>
             <Head />

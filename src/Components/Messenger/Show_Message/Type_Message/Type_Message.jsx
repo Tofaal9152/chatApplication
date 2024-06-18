@@ -14,7 +14,7 @@ const Type_Message = () => {
     setopen_emoji(false);
   };
   return (
-    <div className="px-[2rem] lg:px-[4rem] xl:px-[7rem] flex absolute bottom-0  bg-white w-full p-2 ">
+    <div className="px-[1rem] custom500:px-[2rem] lg:px-[4rem] xl:px-[7rem] flex absolute bottom-0  bg-white w-full p-2 ">
       <div className="flex justify-center items-center space-x-2 sm:space-x-4 custom500:w-[90vw]  w-full">
         {/*  */}
         <span className="cursor-pointer p-2 rounded-full hover:bg-gray-100">
