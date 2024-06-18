@@ -14,7 +14,7 @@ const TypeMessage = () => {
     setopen_emoji(false);
   };
   return (
-    <div className="px-[1rem] custom500:px-[2rem] lg:px-[4rem] xl:px-[7rem] flex absolute bottom-0  bg-white w-full p-2 overflow-x-hidden dark:bg-[#1e2021] dark:border-solid dark:border-[1px] dark:border-gray-700">
+    <div className="px-[1rem] custom500:px-[2rem] lg:px-[4rem] xl:px-[7rem] flex  bottom-0  bg-white w-full p-2 overflow-x-hidden dark:bg-[#1e2021] dark:border-solid dark:border-[1px] dark:border-gray-700">
       <div className="flex justify-center items-center space-x-2 sm:space-x-4 custom500:w-[90vw]  w-full">
         {/*  */}
         <span className="cursor-pointer p-1 custom500:p-2 rounded-full hover:bg-gray-100 dark:text-white dark:hover:bg-black">
