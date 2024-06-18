@@ -11,12 +11,18 @@ export const counterSlice = createSlice({
     reducers: {
         
         setopen_notification: (state) => {
+            state.clicked_Setting = false;
+            state.Small_device_Chat_Peopple = false;
             state.open_notification = !state.open_notification
         },
         setclicked_Setting: (state) => {
+            state.open_notification = false;
+            state.Small_device_Chat_Peopple = false;
             state.clicked_Setting = !state.clicked_Setting
         },
         setSmall_device_Chat_Peopple: (state) => {
+            state.clicked_Setting = false;
+            state.open_notification = false;
             state.Small_device_Chat_Peopple = !state.Small_device_Chat_Peopple
         },
         
