@@ -18,6 +18,9 @@ export default {
 
         'custom879': '996px',
         // => @media (min-width: 923px) { ... }
+        'custom500': '500px',
+        // => @media (min-width: 923px) { ... }
+
       },
     },
   },
