@@ -14,15 +14,15 @@ const Type_Message = () => {
     setopen_emoji(false);
   };
   return (
-    <div className="px-[1rem] custom500:px-[2rem] lg:px-[4rem] xl:px-[7rem] flex absolute bottom-0  bg-white w-full p-2 ">
+    <div className="px-[1rem] custom500:px-[2rem] lg:px-[4rem] xl:px-[7rem] flex absolute bottom-0  bg-white w-full p-2 overflow-x-hidden">
       <div className="flex justify-center items-center space-x-2 sm:space-x-4 custom500:w-[90vw]  w-full">
         {/*  */}
-        <span className="cursor-pointer p-2 rounded-full hover:bg-gray-100">
+        <span className="cursor-pointer p-1 custom500:p-2 rounded-full hover:bg-gray-100">
           <IoLinkOutline size={20} />
         </span>
         {/*  */}
         <div className="flex flex-1  items-center bg-white p-1 rounded-full border border-gray-300">
-          <span className="cursor-pointer p-2 rounded-full hover:bg-gray-100">
+          <span className="cursor-pointer p-1 custom500:p-2 rounded-full hover:bg-gray-100">
             <FaMicrophone size={20} />
           </span>
           <input
@@ -34,7 +34,7 @@ const Type_Message = () => {
           />
           <div
             onClick={() => setopen_emoji((e) => !e)}
-            className="cursor-pointer p-2 rounded-full hover:bg-gray-100"
+            className="cursor-pointer p-1 custom500:p-2 rounded-full hover:bg-gray-100"
           >
             <BsEmojiSmile size={20} />
           </div>
@@ -43,7 +43,7 @@ const Type_Message = () => {
           </div>
         </div>
         {/*  */}
-        <div className="cursor-pointer p-2 rounded-full bg-green-500 hover:bg-green-600">
+        <div className="cursor-pointer p-1 custom500:p-2 rounded-full bg-[#9746ff] hover:bg-[#8e3df8]">
           <IoIosSend className="text-white" size={22} />
         </div>
       </div>

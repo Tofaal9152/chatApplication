@@ -16,10 +16,12 @@ const Notification = () => {
     <div className="p-6  hide_scroll h-screen rounded-lg max-w-md mx-auto overflow-y-hidden z-10">
       {/* Header */}
       <div className="flex items-center justify-between mb-4 space-x-3">
-        <h1 className="text-xl font-bold text-[#191816] hover:underline cursor-pointer">Notifications</h1>
+        <h1 className="text-xl font-bold text-[#191816] hover:underline cursor-pointer">
+          Notifications
+        </h1>
         <div
           onClick={() => dispatch(setopen_notification())}
-          className="duration-500 p-1 cursor-pointer items-center justify-center bg-green-500 rounded-full shadow-md"
+          className="duration-500 p-1 cursor-pointer items-center justify-center bg-[#9746ff] rounded-full shadow-md"
         >
           <RiArrowRightDoubleLine
             className="cursor-pointer text-white  duration-300"
@@ -40,7 +42,6 @@ const Notification = () => {
               <div className="flex flex-col space-y-1">
                 <h2 className="text-sm font-semibold text-[#191816]">
                   {item.avatar_name}
-                  
                 </h2>
                 <p className="text-sm text-[#191816]">
                   {item.avatar_text.length > 10

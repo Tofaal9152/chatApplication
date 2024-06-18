@@ -26,7 +26,7 @@ const Setting = () => {
       {/* back */}
       <div
         onClick={() => dispatch(setclicked_Setting())}
-        className="p-2 top-3 z-10 left-3 rounded-full bg-green-500 items-start justify-start flex absolute cursor-pointer"
+        className="p-2 top-3 z-10 left-3 rounded-full bg-[#9746ff] items-start justify-start flex absolute cursor-pointer"
       >
         <IoMdArrowRoundBack size={20} className="text-white" />
       </div>
@@ -36,10 +36,10 @@ const Setting = () => {
           <img
             src={profileImage}
             alt="Avatar"
-            className="w-[4rem] h-[4rem] rounded-full object-cover ring-2 ring-green-500 shadow-md"
+            className="w-[4rem] h-[4rem] rounded-full object-cover ring-2 ring-[#8e3df8] shadow-md"
           />
           <CiExport
-            className="text-green-800  cursor-pointer"
+            className="text-voilet-800  cursor-pointer"
             size={15}
             onClick={() => handleChangeProfileImage(newImage)}
           />
@@ -49,7 +49,7 @@ const Setting = () => {
           <h1 className="text-xl font-semibold text-[#191816]">
             {profileName}
           </h1>
-          <CiExport className="text-green-800  cursor-pointer" size={10} />
+          <CiExport className="text-voilet-800  cursor-pointer" size={10} />
           {/* Add Image <input  className="hidden" type="file"></input> */}
         </div>
         <p className="text-gray-600 text-sm">
@@ -60,7 +60,7 @@ const Setting = () => {
 
       {/* Settings */}
       <div className="flex h-full flex-col items-center  relative  rounded-lg w-full space-y-4">
-        <hr className="w-full h-[1px] border-none bg-green-500 text-green " />
+        <hr className="w-full h-[1px] border-none bg-[#9746ff]" />
         {/* Dark Mode */}
         <div className="flex items-center justify-between w-full duration-500 cursor-pointer">
           <h1 className="text-md font-semibold text-gray-800">Dark Mode</h1>
@@ -68,7 +68,7 @@ const Setting = () => {
             <BiSolidToggleRight
               onClick={() => setDark_Mode_On_Off((e) => !e)}
               size={35}
-              className="text-green-500"
+              className="text-[#9746ff]"
             />
           ) : (
             <BiSolidToggleLeft
@@ -85,7 +85,7 @@ const Setting = () => {
             <BiSolidToggleRight
               onClick={() => setactive_On_Off((e) => !e)}
               size={35}
-              className="text-green-500"
+              className="text-[#9746ff]"
             />
           ) : (
             <BiSolidToggleLeft
@@ -102,10 +102,16 @@ const Setting = () => {
             Change language
           </h1>
           <div>
-            <select className="w-full border border-gray-300 rounded px-2 py-1 text-xs outline-none bg-green-500 text-white font-semibold">
-              <option  className="bg-green-500 font-medium  " value="1">Bangla</option>
-              <option  className="bg-green-500 font-medium  " value="2">English</option>
-              <option  className="bg-green-500 font-medium  " value="3">Hindi</option>
+            <select className="w-full border border-gray-300 rounded px-2 py-1 text-xs outline-none bg-[#9746ff] text-white font-semibold">
+              <option className="bg-[#9746ff] font-medium  " value="1">
+                Bangla
+              </option>
+              <option className="bg-[#9746ff] font-medium  " value="2">
+                English
+              </option>
+              <option className="bg-[#9746ff] font-medium  " value="3">
+                Hindi
+              </option>
             </select>
           </div>
         </div>
@@ -129,7 +135,7 @@ const Setting = () => {
         </div>
         {/* Log Out */}
         <div className="flex items-center justify-end w-full absolute bottom-0">
-          <button className="px-2 font-semibold py-1 text-green-500 bg-white border border-green-500  rounded hover:bg-green-400 hover:text-white duration-500 focus:outline-none">
+          <button className="px-2 font-semibold py-1 text-[#9746ff] bg-white border border-[#9746ff]  rounded hover:bg-[#8e3df8] hover:text-white duration-300 focus:outline-none">
             Log out
           </button>
         </div>

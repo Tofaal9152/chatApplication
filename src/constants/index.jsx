@@ -286,3 +286,20 @@ export const chating_between = [
     FriendMyTime: "12:51",
   },
 ];
+export const Translate_to = [
+  {
+    language: "English",
+  },
+  {
+    language: "Spanish",
+  },
+  {
+    language: "French",
+  },
+  {
+    language: "German",
+  },
+  {
+    language: "Chinese",
+  },
+];

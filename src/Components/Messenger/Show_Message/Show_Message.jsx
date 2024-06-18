@@ -24,12 +24,12 @@ const MsxContainer = () => {
   );
 
   return (
-    <div className="flexWidth2 flex-1  h-screen flex flex-col relative bg- border-x-[1px] border-[#D4D4DD] overflow-x-hidden">
+    <div className="flexWidth2 flex-1 h-screen flex flex-col relative bg- border-x-[1px] border-[#D4D4DD] overflow-x-hidden">
       {/*1. Nav */}
       <div className="flex items-center custom500:px-[3rem] justify-between p-[0.7rem] px-[1.6rem] lg:px-[5rem] shadow-md bg-white">
         <div className="flex justify-start items-start space-x-3">
           <img
-            className="w-[1.7rem] h-[1.7rem] ring-2 ring-green-500 rounded-full object-cover"
+            className="w-[1.7rem] h-[1.7rem] ring-2 ring-[#8e3df8] rounded-full object-cover"
             src={Avatar}
             alt="User Avatar"
           />
@@ -43,16 +43,16 @@ const MsxContainer = () => {
         </div>
         <div className="flex space-x-3 md:space-x-6 lg:space-x-8">
           <div className="flex items-center justify-center space-x-6 lg:space-x-9">
-            <FaPhone className="cursor-pointer" size={20} />
-            <IoIosVideocam className="cursor-pointer" size={20} />
-            <HiDotsVertical className="cursor-pointer" size={20} />
+            <FaPhone className="text-[#9746ff] cursor-pointer" size={20} />
+            <IoIosVideocam className="text-[#9746ff] cursor-pointer" size={20} />
+            <HiDotsVertical className="text-[#9746ff] cursor-pointer" size={20} />
           </div>
           <div
             onClick={() => dispatch(setopen_notification())}
             className="hidden md:block p-2 cursor-pointer items-center justify-center bg-white rounded-full shadow-md"
           >
             <IoIosNotifications
-              className="cursor-pointer text-green-500 hover:text-yellow-500"
+              className="cursor-pointer text-[#9746ff] hover:text-[#8854cc]"
               size={25}
             />
           </div>
