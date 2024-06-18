@@ -154,3 +154,31 @@
 .hide_scroll::-webkit-scrollbar {
     display: none;
 }
+/* Add these styles to your CSS file or a <style> block in your React component */
+
+.custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #a0aec0 #edf2f7;
+    /* Firefox */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+    /* Width of the entire scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #edf2f7;
+    /* Color of the track */
+    border-radius: 4px;
+    /* Rounded corners on the track */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #a0aec0;
+    /* Color of the scrollbar thumb */
+    border-radius: 4px;
+    /* Rounded corners on the thumb */
+    border: 2px solid #edf2f7;
+    /* Space around the thumb */
+}
