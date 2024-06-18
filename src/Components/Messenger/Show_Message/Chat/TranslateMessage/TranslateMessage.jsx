@@ -3,7 +3,7 @@ import { FaGlobeAmericas } from "react-icons/fa";
 import { Translate_to } from "../../../../../constants";
 const Change_Language = () => {
   return (
-    <div className="flex flex-col items-start p-2 space-y-2 z-10 bg-white rounded-lg shadow-lg border border-gray-200 w-[10rem] max-h-[10rem] overflow-y-auto custom-scrollbar">
+    <div className="flex flex-col items-start p-2 space-y-2 bg-white rounded-lg shadow-lg border border-gray-200 w-[10rem] max-h-[10rem] overflow-y-auto custom-scrollbar">
       <h1 className="text-md font-semibold text-gray-800">
         Translate to..
       </h1>
