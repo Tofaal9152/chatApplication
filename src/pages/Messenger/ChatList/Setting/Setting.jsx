@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Avatar from "../../../../assets/Avatar.jpeg";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { FaToggleOff } from "react-icons/fa6";
@@ -6,10 +6,17 @@ import { BiSolidToggleLeft, BiSolidToggleRight } from "react-icons/bi";
 import { CiExport } from "react-icons/ci";
 import { IoMdArrowRoundBack } from "react-icons/io";
 import { useDispatch, useSelector } from "react-redux";
-import { setclicked_Setting } from "../../../../Redux/counterSlice";
+import {
+  setDarkMode,
+  setclicked_Setting,
+} from "../../../../Redux/counterSlice";
 
 const Setting = () => {
   const dispatch = useDispatch();
+  const darkMode = useSelector((state) => {
+    state.counter.darkMode;
+  });
+
   const [Dark_Mode_On_Off, setDark_Mode_On_Off] = useState(true);
   const [active_On_Off, setactive_On_Off] = useState(true);
   // Functionality
@@ -63,16 +70,24 @@ const Setting = () => {
         <hr className="w-full h-[1px] border-none bg-[#9746ff]" />
         {/* Dark Mode */}
         <div className="flex items-center justify-between w-full duration-500 cursor-pointer">
-          <h1 className="text-md font-semibold text-gray-800 dark:text-white">Dark Mode</h1>
+          <h1 className="text-md font-semibold text-gray-800 dark:text-white">
+            Dark Mode
+          </h1>
           {Dark_Mode_On_Off ? (
             <BiSolidToggleRight
-              onClick={() => setDark_Mode_On_Off((e) => !e)}
+              onClick={() => {
+                dispatch(setDarkMode());
+                setDark_Mode_On_Off((e) => !e);
+              }}
               size={35}
               className="text-[#9746ff]"
             />
           ) : (
             <BiSolidToggleLeft
-              onClick={() => setDark_Mode_On_Off((e) => !e)}
+              onClick={() => {
+                dispatch(setDarkMode());              
+                setDark_Mode_On_Off((e) => !e);
+              }}
               size={35}
               className="text-gray-500"
             />
@@ -80,7 +95,9 @@ const Setting = () => {
         </div>
         {/* Active status */}
         <div className="flex items-center justify-between w-full duration-500 cursor-pointer">
-          <h1 className="text-md font-semibold text-gray-800 dark:text-white">Active status</h1>
+          <h1 className="text-md font-semibold text-gray-800 dark:text-white">
+            Active status
+          </h1>
           {active_On_Off ? (
             <BiSolidToggleRight
               onClick={() => setactive_On_Off((e) => !e)}
@@ -121,11 +138,16 @@ const Setting = () => {
           <h1 className="text-md font-semibold text-gray-800 dark:text-white">
             Switch Account
           </h1>
-          <MdKeyboardArrowDown className="cursor-pointer dark:text-white" size={25} />
+          <MdKeyboardArrowDown
+            className="cursor-pointer dark:text-white"
+            size={25}
+          />
         </div>
         {/* Help */}
         <div className="flex items-center justify-between w-full ">
-          <h1 className="text-md font-semibold text-gray-800 dark:text-white">Help</h1>
+          <h1 className="text-md font-semibold text-gray-800 dark:text-white">
+            Help
+          </h1>
         </div>
         {/* Legal & Policies */}
         <div className="flex items-center justify-between w-full">

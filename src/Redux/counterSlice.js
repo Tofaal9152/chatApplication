@@ -1,12 +1,13 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit';
 
 export const counterSlice = createSlice({
     name: 'counter',
     initialState: {
         value: 0,
-        open_notification:false,
-        clicked_Setting:false,
-        Small_device_Chat_Peopple:false,
+        open_notification: false,
+        clicked_Setting: false,
+        Small_device_Chat_Peopple: false,
+        darkMode: false,
     },
     reducers: {
         
@@ -25,11 +26,15 @@ export const counterSlice = createSlice({
             state.open_notification = false;
             state.Small_device_Chat_Peopple = !state.Small_device_Chat_Peopple
         },
+
+        setDarkMode: (state) => {
+            state.darkMode = !state.darkMode;
+        }
         
     },
 })
 
 // Action creators are generated for each case reducer function
-export const { setopen_notification, setclicked_Setting, setSmallDeviceChatPeople } = counterSlice.actions
+export const { setopen_notification, setclicked_Setting, setSmallDeviceChatPeople, setDarkMode } = counterSlice.actions
 
 export default counterSlice.reducer
