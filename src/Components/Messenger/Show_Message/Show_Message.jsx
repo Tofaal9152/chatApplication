@@ -22,7 +22,7 @@ const MsxContainer = () => {
   return (
     <div className="flexWidth2 flex-1  h-screen flex flex-col relative bg- border-x-[1px] border-[#D4D4DD] overflow-x-hidden">
       {/*1. Nav */}
-      <div className="flex items-center justify-between p-[0.7rem] px-[3rem] lg:px-[5rem] shadow-md bg-white">
+      <div className="flex items-center custom500:px-[3rem] justify-between p-[0.7rem] px-[1.6rem] lg:px-[5rem] shadow-md bg-white">
         <div className="flex justify-start items-start space-x-3">
           <img
             className="w-[1.7rem] h-[1.7rem] ring-2 ring-green-500 rounded-full object-cover"
