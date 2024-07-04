@@ -23,8 +23,8 @@ const TypeMessage = () => {
           <IoLinkOutline size={20} />
         </span>
         {/* Input Area */}
-        <div className="flex flex-1 items-center bg-white p-1 rounded-full border border-gray-300 dark:bg-[#1e2021]">
-          <span className="cursor-pointer p-2 rounded-full hover:bg-gray-100 dark:text-white dark:hover:bg-black">
+        <div className="flex flex-1 items-center w-1/2 sm:w-full  bg-white p-1 rounded-full border border-gray-300 dark:bg-[#1e2021]">
+          <span className="cursor-pointer  p-2 rounded-full hover:bg-gray-100 dark:text-white dark:hover:bg-black">
             <FaMicrophone size={20} />
           </span>
           <input
@@ -36,7 +36,7 @@ const TypeMessage = () => {
           />
           <div
             onClick={() => setOpenEmoji((prev) => !prev)}
-            className="cursor-pointer p-2 rounded-full hover:bg-gray-100 dark:text-white dark:hover:bg-black"
+            className="cursor-pointer sm:visible invisible  p-2 rounded-full hover:bg-gray-100 dark:text-white dark:hover:bg-black"
           >
             <BsEmojiSmile size={20} />
           </div>

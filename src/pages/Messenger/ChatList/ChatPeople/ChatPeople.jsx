@@ -23,7 +23,7 @@ const ChatPeople = () => {
         </div>
       </div>
       {/* Chats */}
-      <div className="relative custom-scrollbar flex flex-col overflow-y-auto h-[78vh] 2xl:h-[82vh] space-y-2 p-1 pb-[16rem]">
+      <div className="relative custom-scrollbar flex flex-col overflow-y-auto h-[78vh] 2xl:h-[82vh] space-y-2 p-1 pb-[2rem]">
         {messageContainer.map((item, index) => (
           <div
             key={index}
@@ -37,7 +37,7 @@ const ChatPeople = () => {
               />
               <div className="flex flex-col space-y-1">
                 <h1
-                  className={`${
+                  className={`${  
                     item.avatar_name.length > 15
                       ? "flex flex-col items-start justify-start"
                       : ""
