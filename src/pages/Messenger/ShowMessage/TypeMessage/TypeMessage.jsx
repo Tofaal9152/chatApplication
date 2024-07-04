@@ -2,9 +2,8 @@ import { IoLinkOutline } from "react-icons/io5";
 import { BsEmojiSmile } from "react-icons/bs";
 import { FaMicrophone } from "react-icons/fa";
 import { IoIosSend } from "react-icons/io";
-import { RiArrowRightDoubleLine } from "react-icons/ri";
 import Emoji from "emoji-picker-react";
-import React, { useState } from "react";
+import { useState } from "react";
 
 const TypeMessage = () => {
   const [openEmoji, setOpenEmoji] = useState(false);

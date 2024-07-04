@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Feature3 = () => {
   return (
     <div className="">

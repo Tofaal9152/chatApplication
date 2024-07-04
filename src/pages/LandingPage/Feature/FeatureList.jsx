@@ -1,4 +1,3 @@
-import React from "react";
 // From React Icons
 import { FaVideo } from "react-icons/fa";
 import { MdOutlineSignalWifi4BarLock } from "react-icons/md";

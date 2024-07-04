@@ -1,17 +1,13 @@
-// hide_scroll == hidden scrollbar
-import React from "react";
 import { RiArrowRightDoubleLine } from "react-icons/ri";
 // import Avater from "../../../assets/Avater.jpeg";
 
 import { messageContainer } from "../../../constants";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { setopen_notification } from "../../../Redux/counterSlice";
 const Notification = () => {
   // Redux
   const dispatch = useDispatch();
-  const open_notification = useSelector(
-    (state) => state.counter.open_notification
-  );
+
   return (
     <div className="p-6  hide_scroll h-screen max-w-md mx-auto overflow-y-hidden z-10 dark:bg-[#241b30]">
       {/* Header */}

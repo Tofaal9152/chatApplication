@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 // from asset and React-Icons
 import { FaTwitter } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
@@ -15,7 +14,7 @@ const Footer = () => {
         <img className="md:w-[10rem] w-[6rem]" src={Polyglot} alt="" />
         {/* pc */}
         <div className="hidden custom879:flex justify-center items-center space-x-10 ">
-          {footerNavLinks.map((item, index) => {
+          {footerNavLinks.map((item) => {
             return (
               <div
                 className="text-black fontPoppin cursor-pointer"

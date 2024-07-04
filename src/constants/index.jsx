@@ -1,6 +1,3 @@
-import { FaBookmark } from "react-icons/fa";
-import { MdGroups } from "react-icons/md";
-import { IoMdSettings } from "react-icons/io";
 import Avatar from "../assets/Avatar.jpeg";
 export const navbarNavLinks = [
   {

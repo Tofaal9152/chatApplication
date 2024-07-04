@@ -1,5 +1,3 @@
-import React from "react";
-// Adding Style.js and assets
 import style from "../../style";
 // Importing Components
 import Navbar from "./Navbar/Navbar";

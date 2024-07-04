@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 // from asset
 import close from "../../../assets/close.svg";
 import menu from "../../../assets/menu.svg";
@@ -17,7 +17,7 @@ const Navbar = () => {
       <img className="w-[2.3rem] md:w-[2.5rem]" src={logo} alt="" />
       {/* pc */}
       <div className="hidden custom879:flex justify-center items-center space-x-10 ">
-        {navbarNavLinks.map((item, index) => {
+        {navbarNavLinks.map((item) => {
           return (
             <div className="text-white fontPoppin cursor-pointer" key={item.id}>
               {item.title}
@@ -54,7 +54,7 @@ const Navbar = () => {
             open_close ? "hidden" : "flex"
           } custom879:hidden flex-col bg-white h-screen items-start flex-1  space-y-4 fixed top-[0] overflow-x-hidden right-0 min-w-[9.5rem] p-4 sidebar`}
         >
-          {navbarNavLinks.map((item, index) => {
+          {navbarNavLinks.map((item) => {
             return (
               <div
                 className="text-black fontPoppin cursor-pointer mt-[4.1rem]"

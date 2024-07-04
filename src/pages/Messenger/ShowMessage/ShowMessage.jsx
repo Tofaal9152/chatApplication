@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+
 import Avatar from "../../../assets/Avatar.jpeg";
 import { FaPhone } from "react-icons/fa";
 import { IoIosVideocam } from "react-icons/io";

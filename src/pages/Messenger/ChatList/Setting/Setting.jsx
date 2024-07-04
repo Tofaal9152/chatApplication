@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react";
+import  { useState } from "react";
 import Avatar from "../../../../assets/Avatar.jpeg";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import { FaToggleOff } from "react-icons/fa6";
 import { BiSolidToggleLeft, BiSolidToggleRight } from "react-icons/bi";
 import { CiExport } from "react-icons/ci";
 import { IoMdArrowRoundBack } from "react-icons/io";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import {
   setDarkMode,
   setclicked_Setting,
@@ -13,21 +12,9 @@ import {
 
 const Setting = () => {
   const dispatch = useDispatch();
-  const darkMode = useSelector((state) => {
-    state.counter.darkMode;
-  });
-
   const [Dark_Mode_On_Off, setDark_Mode_On_Off] = useState(false);
   const [active_On_Off, setactive_On_Off] = useState(true);
-  // Functionality
-  const [profileImage, setProfileImage] = useState(Avatar);
-  const [profileName, setProfileName] = useState("Gal Gadot");
-  const [language, setLanguage] = useState("English");
-
-  const handleChangeProfileImage = (newImage) => {
-    setProfileImage(newImage);
-  };
-
+  
   return (
     <div className=" flex-col interfont flex items-center h-screen overflow-y-hidden p-4 dark:bg-[#241b30]">
       {/* back */}
@@ -41,27 +28,26 @@ const Setting = () => {
       <div className="flex flex-col items-center justify-center text-center space-y-4 mb-4">
         <div className="flex items-end ">
           <img
-            src={profileImage}
+            src={Avatar}
             alt="Avatar"
             className="w-[4rem] h-[4rem] rounded-full object-cover ring-2 ring-[#8e3df8] shadow-md"
           />
           <CiExport
             className="text-voilet-800  cursor-pointer"
             size={15}
-            onClick={() => handleChangeProfileImage(newImage)}
           />
           {/* Add Image <input className="hidden" type="file"></input> */}
         </div>
         <div className="flex items-center  space-x-2">
           <h1 className="text-xl font-semibold text-[#191816] dark:text-white">
-            {profileName}
+            Gal Gadot
           </h1>
           <CiExport className="text-voilet-800  cursor-pointer" size={10} />
           {/* Add Image <input  className="hidden" type="file"></input> */}
         </div>
         <p className="text-gray-600 text-sm dark:text-gray-400">
-          In real life, I'm the type of girl who doesn't take herself too
-          seriously....
+          {`In real life, I'm the type of girl who doesn't take herself too
+          seriously`}
         </p>
       </div>
 
@@ -75,7 +61,7 @@ const Setting = () => {
           </h1>
           {Dark_Mode_On_Off ? (
             <BiSolidToggleRight
-              onClick={() => {                
+              onClick={() => {
                 setDark_Mode_On_Off((e) => !e);
                 dispatch(setDarkMode());
               }}
@@ -84,7 +70,7 @@ const Setting = () => {
             />
           ) : (
             <BiSolidToggleLeft
-              onClick={() => {                
+              onClick={() => {
                 setDark_Mode_On_Off((e) => !e);
                 dispatch(setDarkMode());
               }}

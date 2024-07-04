@@ -1,5 +1,3 @@
-import React from "react";
-// From Assets
 import featureMessenger from "../../../assets/featureMessenger.png";
 
 const Feature2 = () => {

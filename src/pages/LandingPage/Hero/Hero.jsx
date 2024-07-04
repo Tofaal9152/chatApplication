@@ -1,4 +1,3 @@
-import React from "react";
 // React Icons
 import { FaArrowRight } from "react-icons/fa6";
 // From React-Dom

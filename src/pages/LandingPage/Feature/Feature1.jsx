@@ -1,5 +1,3 @@
-import React from "react";
-// From Assets
 import featureGirl from "../../../assets/featureGirl.jpeg";
 
 const Feature1 = () => {

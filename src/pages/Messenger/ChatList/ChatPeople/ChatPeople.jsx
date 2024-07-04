@@ -1,5 +1,3 @@
-import React from "react";
-import { RiArrowDropDownLine } from "react-icons/ri";
 import { CiSearch } from "react-icons/ci";
 // import { Messenger_Recent } from "../../../../constants";
 import { messageContainer } from "../../../../constants";
